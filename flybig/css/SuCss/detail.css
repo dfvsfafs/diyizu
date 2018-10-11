@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.f12{font-size: 12px;}
+.f14{font-size: 14px;}
+.f16{font-size: 16px;}
+.f18{font-size: 18px;}
+.detail_content{
+	min-width: 1200px;
+}
+/*搜索栏*/
+.shop_searchL{
+	padding-left: 35px;
+	min-width: 340px;
+}
+.shop_searchM{
+	margin-top: 30px;
+	padding: 0px 30px;
+	position: relative;
+	min-width: 360px;
+}
+.shop_searchM>input{
+	position: absolute;
+	width: 250px;
+	left: 55px;
+	top: 3px;
+	color: #999999;
+	height: 28px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.shop_searchM>button{
+	position: absolute;
+	right: 55px;
+	top: 3px;
+	height: 28px;
+	width: 85px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	background: url;
+}
+.shop_searchM>ul{
+	margin-left: 30px;
+	line-height: 30px;
+}
+.shop_searchM>ul li{
+	margin-right: 10px;
+	color: #666;
+}
+.shop_searchM>ul li a:link,.shop_searchM>ul li a:visited{
+	color: #666;
+	text-decoration: none;
+}
+.shop_searchR{
+	margin-left: 30px;
+	min-width: 320px;
+	margin-top: 10px;
+}
+.shop_nav{
+	background-color: #7ea12b;
+	height: 24px;
+	line-height: 24px;
+}
+.shop_nav>ul{padding-left: 30px;margin-bottom: 0px;}
+.shop_nav>ul li:first-of-type{
+	margin-right: 50px;
+}
+.shop_nav>ul li{
+	margin-right: 15px;
+	color: white;
+	padding: 0px 5px;
+	cursor: pointer;
+}
+.shop_nav>ul li a:link,.shop_nav>ul li a:visited{
+	color: white;
+	text-decoration: none;
+}
+.shop_nav>ul li:hover{
+	background-color: #66861A;
+	border-radius: 12px;
+}
+.shop_nav>ul li:first-of-type:hover{background-color: transparent}
+/*主图*/
+.item{background:#fff; width:400px; height:auto; float:left; }
+.big-photo img{ width:400px; height:400px; border:1px solid #e0e0e0}
+.des-small img{ width:65px; height:65px;border:2px solid transparent; margin-right: 9px;margin-top: 10px;}
+.des-small img:hover{ border:2px solid orangered}
+.detail_1st{
+	width: 1200px;
+	margin: 20px auto;
+	padding: 20px 15px;
+	border: 1px #CCCCCC solid;
+}
+/*右边价格信息*/
+.detail_1stR{
+	margin-left: 20px;
+}
+.detail_1stR>span:first-of-type{
+	line-height: 35px;
+}
+.yellow_White{
+	color: white;
+	padding: 3px;
+	background-color: #ffc900;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.detail_1stR>ul{
+	width: 748px;
+	background-color: #f8f8f8;
+	padding: 10px 0px;
+}
+.detail_1stR>ul li{
+	padding-left: 45px;
+	background: url(../../img/SuImg/bg.png)no-repeat 20px -27px;
+	color: #666666;
+	line-height: 25px;
+}
