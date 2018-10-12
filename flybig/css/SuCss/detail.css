@@ -85,9 +85,10 @@
 }
 .shop_nav>ul li:first-of-type:hover{background-color: transparent}
 /*主图*/
+.item a{display:inline-block;background-color: white; vertical-align: baseline;}
 .item{background:#fff; width:400px; height:auto; float:left; }
 .big-photo img{ width:400px; height:400px; border:1px solid #e0e0e0}
-.des-small img{ width:65px; height:65px;border:2px solid transparent; margin-right: 9px;margin-top: 10px;}
+.des-small img{ width:65px; height:65px;border:2px solid transparent;margin-right: 9px;margin-top: 10px;}
 .des-small img:hover{ border:2px solid orangered}
 .detail_1st{
 	width: 1200px;
@@ -138,7 +139,7 @@
 }
 .detail_price{
 	padding-left:20px;
-	background: url(../../img/bg1.png);
+	background: url(../../img/SuImg/bg1.png);
 	width: 748px;
 	background-size: cover;
 	height: 80px;
@@ -219,10 +220,10 @@
 	outline: none;
 }
 .btn_up{
-	background: url(../../img/btn.png)no-repeat 0px -150px;
+	background: url(../../img/SuImg/btn.png)no-repeat 0px -150px;
 }
 .btn_down{
-	background: url(../../img/btn.png)no-repeat 0px -188px;
+	background: url(../../img/SuImg/btn.png)no-repeat 0px -188px;
 }
 .count+span{
 	line-height: 35px;
