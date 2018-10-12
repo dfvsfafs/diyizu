@@ -5,17 +5,338 @@
 		<title>详情页</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/SuCss/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fzm/index.css"/>
 		<script type="text/javascript" src="js/jquery.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/jquery.min.js" ></script>
-		<!--<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>-->
-		<!--<script type="text/javascript" src="js/SuJs/jquery.date_input.pack.js" ></script>-->
+		<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/SuJs/jquery.date_input.pack.js" ></script>
 		<script type="text/javascript" src="js/SuJs/detail.js" ></script>
 	</head>
 	<body class="">
 		<!--头部-->
-		<header class="">
-			这里是头部
-		</header>
+		<!--顶部导航条-->
+		<div class="top_nava">
+			<div class="clearfix top_nav">
+				<!--左边导航-->
+				<div class="pull-left top_nav_left">
+					<ul class="clearfix">
+						<li class="home pull-left">
+							<div style="padding-left: 0px;">
+								<a href="#" target="_top">
+									<span>飞猪</span>
+								</a>
+							</div>
+						</li>
+						<li class="pull-left logrist">
+							<div>
+								<span>Hi，最近想去哪里玩？</span>
+								<a href="#">请登录</a>
+								<a href="#">免费注册</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--左边导航-->
+				<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+				<!--右边导航-->
+				<div class="pull-right top_nav_right">
+					<ul class="clearfix">
+						<li class="pull-left top_nav_right_hover">
+							<div class="top_nav_right_a">
+								<a href="#">手机客户端</a>
+								<img src="img/fzm/t_arrow.gif" class="xwcms" />
+							</div>
+							<div class="top_nav_right_a_hove">
+								<a href="#">
+									<img src="img/fzm/top_a.png"/>
+								</a>
+							</div>
+						</li>
+						<li class="pull-left top_nav_right_hover">
+							<div class="top_nav_right_a">
+								<a href="#">我的淘宝</a>
+								<img src="img/fzm/t_arrow.gif" class="xwcms" />
+							</div>
+							<div class="top_nav_right_a_hove">
+								<a href="#">已买到的宝贝</a>
+								<a href="#">我的足迹</a>
+								<a href="#">飞猪旅行达人</a>
+							</div>
+						</li>
+						<li class="pull-left">
+							<div class="top_nav_right_a">
+								<a href="#">购物车</a>
+							</div>
+						</li>
+						<li class="pull-left top_nav_right_hover">
+							<div class="top_nav_right_a">
+								<a href="#">收藏夹</a>
+								<img src="img/fzm/t_arrow.gif" class="xwcms" />
+							</div>
+							<div class="top_nav_right_a_hove">
+								<a href="#">收藏的宝贝</a>
+								<a href="#">收藏的店铺</a>
+							</div>
+						</li>
+						<li class="top_nav_right_b">|</li>
+						<li class="pull-left">
+							<div class="top_nav_right_a">
+								<a href="#">服务中心</a>
+							</div>
+						</li>
+						<li class="pull-left top_nav_right_hover">
+							<div class="top_nav_right_a">
+								<a href="#">商家中心</a>
+								<img src="img/fzm/t_arrow.gif" class="xwcms" />
+							</div>
+							<div class="top_nav_right_a_hove" style="padding-right: 13px !important;">
+								<a href="#">招商入驻</a>
+								<a href="#">商家规则</a>
+								<a href="#">培训中心</a>
+								<a href="#">商家品控</a>
+								<a href="#">活动中心</a>
+								<a href="#">商家服务</a>
+								<a href="#">里程发票</a>
+							</div>
+						</li>
+						<li class="pull-left">
+							<div class="top_nav_right_a">
+								<a href="#">淘宝</a>
+							</div>
+						</li>
+						<li class="pull-left top_nav_right_hover">
+							<div class="top_nav_right_a">
+								<a href="#" class="wang_icon">网站导航</a>
+								<img src="img/fzm/t_arrow.gif" class="xwcms" />
+							</div>
+							<!--隐藏部分-->
+							<div class="top_nav_right_a_hoveb clearfix row">
+								<!--2-->
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top_nav_right_a_hoveb_borderr">
+									<h4>机票</h4>
+									<div class="clearfix row" style="margin: 0px;">
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li class="top_nav_right_a_hoveb_H">
+												<a href="#">国内机票
+													<img src="img/fzm/top_b.gif"/>
+												</a>
+											</li>
+											<li><a href="#">机票预约</a></li>
+											<li><a href="#">票价历史</a></li>
+										</ul>
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li><a href="#">国际机票</a></li>
+											<li><a href="#">自助值机</a></li>
+										</ul>
+									</div>
+								</div>	
+								<!--2-->
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top_nav_right_a_hoveb_borderr">
+									<h4>酒店</h4>
+									<div class="clearfix row" style="margin: 0px;">
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li class="top_nav_right_a_hoveb_H">
+												<a href="#">香港酒店
+													<img src="img/fzm/top_b.gif"/>
+												</a>
+											</li>
+											<li><a href="#">三亚酒店</a></li>
+											<li><a href="#">北京酒店</a></li>
+											<li><a href="#">杭州酒店</a></li>
+											<li><a href="#">成都酒店</a></li>
+										</ul>
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li><a href="#">澳门酒店</a></li>
+											<li><a href="#">上海酒店</a></li>
+											<li><a href="#">广州酒店</a></li>
+											<li><a href="#">深圳酒店</a></li>
+											<li><a href="#">更多酒店</a></li>
+										</ul>
+									</div>
+								</div>
+								<!--2-->
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top_nav_right_a_hoveb_borderr">
+									<h4>客栈</h4>
+									<div class="clearfix row" style="margin: 0px;">
+										<ul class="pull-left  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li class="top_nav_right_a_hoveb_H">
+												<a href="#">厦门客栈
+													<img src="img/fzm/top_b.gif"/>
+												</a>
+											</li>
+											<li><a href="#">丽江客栈</a></li>
+											<li><a href="#">凤凰客栈</a></li>
+											<li><a href="#">杭州客栈</a></li>
+											<li><a href="#">更多客栈</a></li>
+										</ul>
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li><a href="#">三亚公寓</a></li>
+											<li><a href="#">舟山农家乐</a></li>
+											<li><a href="#">阳朔客栈</a></li>
+											<li><a href="#">台湾民宿</a></li>
+										</ul>
+									</div>
+								</div>
+								<!--2-->
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top_nav_right_a_hoveb_borderr">
+									<h4>签证</h4>
+									<div class="clearfix row" style="margin: 0px;">
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li class="top_nav_right_a_hoveb_H">
+												<a href="#">泰国签证
+													<img src="img/fzm/top_b.gif"/>
+												</a>
+											</li>
+											<li><a href="#">马来西亚</a></li>
+											<li><a href="#">韩国签证</a></li>
+											<li><a href="#">菲律宾签</a></li>
+											<li><a href="#">美国签证</a></li>
+										</ul>
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li><a href="#">入台证</a></li>
+											<li><a href="#">日本签证</a></li>
+											<li><a href="#">越南签证</a></li>
+											<li><a href="#">新加坡签</a></li>
+											<li><a href="#">澳大利亚</a></li>
+										</ul>
+									</div>
+								</div>
+								<!--2-->
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top_nav_right_a_hoveb_borderr">
+									<h4>景点门票</h4>
+									<div class="clearfix row" style="margin: 0px;">
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li class="top_nav_right_a_hoveb_H">
+												<a href="#">迪士尼
+													<img src="img/fzm/top_b.gif"/>
+												</a>
+											</li>
+											<li><a href="#">杜莎夫人蜡像馆</a></li>
+											<li><a href="#">亚龙湾公园</a></li>
+											<li><a href="#">欢乐世界</a></li>
+											<li><a href="#">厦门鼓浪屿</a></li>
+										</ul>
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li><a href="#">海洋公园</a></li>
+											<li><a href="#">蜈支洲</a></li>
+											<li><a href="#">深圳欢乐谷</a></li>
+											<li><a href="#">世界之窗</a></li>
+											<li><a href="#">婺源</a></li>
+										</ul>
+									</div>
+								</div>
+								<!--2-->
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top_nav_right_a_hoveb_borderrb">
+									<h4>度假线路</h4>
+									<div class="clearfix row" style="margin: 0px;">
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li class="top_nav_right_a_hoveb_H">
+												<a href="#">香港
+													<img src="img/fzm/top_b.gif"/>
+												</a>
+											</li>
+											<li><a href="#">泰国</a></li>
+											<li><a href="#">丽江</a></li>
+											<li><a href="#">韩国</a></li>
+											<li><a href="#">普吉岛</a></li>
+										</ul>
+										<ul class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<li><a href="#">马尔代夫</a></li>
+											<li><a href="#">三亚</a></li>
+											<li><a href="#">日本</a></li>
+											<li><a href="#">台湾</a></li>
+											<li><a href="#">新加坡</a></li>
+										</ul>
+									</div>
+								</div>
+								<!--2-->
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--右边导航-->
+			</div>
+		</div>
+		<!--顶部搜索部分-->
+		<div class="header_cen">
+			<div class="header_centent">
+				<div class="row" style="margin: 0px;">
+					<!--logo图片-->
+					<div class="header_logo col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<a href="#">
+							<img src="img/fzm/top_d.png"/>
+						</a>
+					</div>
+					<!--搜索框-->
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative;">
+						<div class="header_search_btn clearfix">
+							<button class="search_switch_selected">宝贝</button>
+							<button class="">店铺</button>
+						</div>
+						<div class="input-group header_search_inp">
+		                    <input type="text" class="form-control" placeholder="目的地/酒店/景点/签证等">
+		                    <span class="input-group-btn">
+		                        <button class="btn btn-default" type="button">
+		                        	<span class="glyphicon glyphicon-search"></span>
+		                        	搜索
+		                        </button>
+		                    </span>
+		                </div>
+		                <!--隐藏部分-->
+		                <div class="hearder_search_recommend">
+		                	<div>
+		                		<img src="img/fzm/top_e.png"/>
+		                		<span>搜索·发现</span>
+		                	</div>
+		                	<div class="clearfix">
+		                		<b class="pull-left">交通：</b>
+		                		<div class="pull-left">
+			                		<a href="#">火车票</a>
+			                		<a href="#">机票</a>
+		                		</div>
+		                	</div>
+		                	<div class="clearfix">
+		                		<b class="pull-left">酒店：</b>
+		                		<div class="pull-left">
+		                			<a href="#">酒店</a>
+		                		</div>
+		                	</div>
+		                	<div class="clearfix">
+		                		<b class="pull-left">度假：</b>
+		                		<div class="pull-left">
+			                		<a href="#">泰国签证</a>
+			                		<a href="#">上海野生动物园</a>
+			                		<a href="#">香港迪士尼</a>
+			                		<a href="#">兵马俑门票</a>
+			                		<br />
+			                		<a href="#">拙政园</a>
+			                		<a href="#">颐和园</a>
+			                		<a href="#">日本签证</a>
+			                		<a href="#">香港流量包</a>
+		                		</div>
+		                	</div>
+		                </div>
+					</div>
+					<!--电话号码-->
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="header_phone text_hover">
+							<div class="header_phone_text header_phone_icon text_hover">
+								<span>消费者热线(国内)</span>
+								<span>9510208</span>
+							</div>
+							<div class="header_phone_text text_hover">
+								<span style="padding-left: 93px;">400-1688-688</span>
+							</div>
+							<div class="header_phone_text text_hover">
+								<span>消费者热线(国际)</span>
+								<span>+86-571-56888688</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--row结束-->
+			</div>
+		</div>
 		<!--正文-->
 		<div class="detail_content">
 			<!--搜索栏-->
@@ -141,31 +462,33 @@
 		    		<div class="choose">
 		    			<p>
 		    				<span class="detail_span">出发地</span>
-		    				<span class="type"><a href="#">上海</a></span>
+		    				<span class="type"><span>上海</span><i></i></span>
 		    			</p>
 		    			<p>
 		    				<span class="detail_span">套餐类型</span>
-		    				<span class="type"><a href="#">札幌5日机票+西瓜卡</a></span>
-		    				<span class="type"><a href="#">大阪7日午去午回+近铁</a></span>
-		    				<span class="type"><a href="#">大阪5日午去午回+西瓜</a></span>
-		    			</p>
-		    			<p>
+		    				<span class="type"><span>札幌5日机票+西瓜卡</span><i></i></span>
+		    				<span class="type"><span>大阪7日午去午回+近铁</span><i></i></span>
+		    				<span class="type"><span>大阪5日午去午回+西瓜</span><i></i></span><br />
 		    				<span class="detail_span"> </span>
-		    				<span class="type"><a href="#">东京5日机票+西瓜卡</a></span>
-		    				<span class="type"><a href="#">香川5日机票+西瓜卡</a></span>
-		    				<span class="type"><a href="#">名古屋6日机票+西瓜卡</a></span>
+		    				<span class="type"><span>东京5日机票+西瓜卡</span><i></i></span>
+		    				<span class="type"><span>香川5日机票+西瓜卡</span><i></i></span>
+		    				<span class="type"><span>名古屋6日机票+西瓜卡</span><i></i></span>
 		    			</p>
 		    			<p>
 		    				<span class="detail_span">出游人群</span>
-		    				<span class="type"><a href="#">成人</a></span>
-		    				<span class="type"><a href="#">单人房差</a></span>
+		    				<span class="type"><span>成人</span><i> </i></span>
+		    				<span class="type"><span>单人房差</span><i> </i></span>
 		    			</p>
 		    			<div>
-		    				<span class="detail_span">出游日期</span>
-		    				<span>
-								<!--<input type="text" class="date_picker">-->日历！！
-							</span>
+		    				<span class="detail_span">出游日期</span>		    				
+							<input type="text" class="date_picker date_select">
 		    			</div>
+		    			<!--日历-->
+		    			<script type="text/javascript">
+							$(function(){
+								$('.date_picker').date_input();
+							})
+						</script>
 		    			<p class="count f12 pull-left">
 		    				<span class="detail_span pull-left">数量</span>
 		    				<input type="text" name="" id="" value="1" class="pull-left"/>
@@ -187,10 +510,160 @@
 		    			</p>
 		    			<p class="tips">
 		    				<span class="detail_span">提醒</span>
-		    				<a href="#" class="f12">需二次确认,商家将在9个工作小时内(工作日9:00--18:00)核实是否有位</a>
+		    				<span class="f12">需二次确认,商家将在9个工作小时内(工作日9:00--18:00)核实是否有位</span>
 		    			</p>
 		    		</div>
 			    </div>
+			</div>
+			<div class="detail_2nd">
+				<div class="detail_2ndL">
+					<div class="detail_2L_1st clearfix">
+						<p>
+							<a href="#">春秋旅游旗舰店 <img src="img/SuImg/detail_link.gif"/></a>
+						</p>
+						<ul class="pull-left text-center">
+							<li>
+								<span>描述</span><br />
+								<font>4.8<span class="glyphicon glyphicon-arrow-down"></span></font>
+							</li>
+						</ul>
+						<ul class="pull-left text-center">
+							<li>
+								<span>服 务</span><br />
+								<font>4.8<span class="glyphicon glyphicon-arrow-down"></span></font>
+							</li>
+						</ul>
+						<ul class="pull-left text-center">
+							<li>
+								<span>物 流</span><br />
+								<font>4.8<span class="glyphicon glyphicon-arrow-down"></span></font>
+							</li>
+						</ul>
+						<button class="shop_in f12">进入店铺</button>
+						<button class="f12">收藏店铺</button><br />
+						<div>
+							<span>该商家来自</span>
+							<a href="#"><img src="img/SuImg/detail_feizhu.png" width="45px"/></a>
+						</div>					
+					</div>
+					<div class="clearfix">
+						
+					</div>
+					<div class="detail_2L_2nd">
+						<p>
+							<b>本店搜索</b>
+						</p>
+						<div class="">
+							<p>
+								<span class="text-right">关键字</span><input type="text" name="" id="" value="日本自由行" />
+							</p>
+							<p>
+								<span class="text-right">价格</span><input type="text" name="" id="" value="" />-</span><input type="text" name="" id="" value="" />
+							</p>
+							<p>
+								<span class="text-right"></span>
+								<a href="#"><img src="img/SuImg/btn-search.png"/></a>
+							</p>
+							<a href="#">清迈</a>
+							<a href="#">长白山</a>
+							<a href="#">普吉岛</a>
+						</div>
+					</div>
+					<div class="detail_2L_3rd">
+						<p><b>客服中心</b></p>
+						<div class="">
+							<b>工作时间</b><br />
+							<span>周一至周五：9:00-22:00</span><br />
+							<span>周六至周日：9:00-22:00</span>
+						</div>
+						<div class="">
+							<b>在线咨询</b>
+							<div class="clearfix">
+								<span>咨询组</span>
+								<span class="pull-right">
+									<img src="img/SuImg/linkme.gif"/>
+								</span>
+							</div>
+							<div class="clearfix">
+								<span>跟单组</span>
+								<span class="pull-right">
+									<img src="img/SuImg/leave.gif"/>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="detail_2L_4th">
+						<img src="img/SuImg/collect.png"/>
+					</div>
+					<div class="detail_2L_5th">
+						<p><b>推荐排行榜</b></p>
+						<div>
+							<a class="f14">爆款推荐</a>
+							<a class="f14">经典热卖</a>
+						</div>
+						<div class="rank">
+							<div class="rank_same">
+								<img src="img/SuImg/L1.jpg"/>
+							</div>
+							<a href="#">春秋旅游错峰游上海-清迈自由行5-6天机票全程酒店泰国旅游</a>
+							<p>
+								<b class="f16">¥1299.00</b>
+								<span class="pull-right">已售:<b>4253</b>件</span>
+							</p>
+						</div>
+						<div class="rank">
+							<div class="rank_same">
+								<img src="img/SuImg/L2.jpg"/>
+							</div>
+							<a href="#">春秋旅游错峰游上海-清迈自由行5-6天机票全程酒店泰国旅游</a>
+							<p>
+								<b class="f16">¥1299.00</b>
+								<span class="pull-right">已售:<b>4253</b>件</span>
+							</p>
+						</div>
+						<div class="rank">
+							<div class="rank_same">
+								<img src="img/SuImg/L3.jpg"/>
+							</div>
+							<a href="#">春秋旅游错峰游上海-清迈自由行5-6天机票全程酒店泰国旅游</a>
+							<p>
+								<b class="f16">¥1299.00</b>
+								<span class="pull-right">已售:<b>4253</b>件</span>
+							</p>
+						</div>
+						<div class="rank">
+							<div class="rank_same">
+								<img src="img/SuImg/L4.jpg"/>
+							</div>
+							<a href="#">春秋旅游错峰游上海-清迈自由行5-6天机票全程酒店泰国旅游</a>
+							<p>
+								<b class="f16">¥1299.00</b>
+								<span class="pull-right">已售:<b>4253</b>件</span>
+							</p>
+						</div>
+					</div>
+					<div class="detail_2L_6th">
+						<p><b>宝贝分类</b></p>
+						<div class="classify">
+							<p class="classify_minus">
+								<i> </i>
+								<a href=""><b>查看所有宝贝</b></a>
+							</p>
+							<p class="classify_red">
+								<a href="#">按综合</a>
+								<a href="#">按销量</a>
+								<a href="#">按新品</a>
+								<a href="#">按价格</a>
+							</p>
+							<p class="classify_empty">
+								<a href="#"><b> 蜜月游</b></a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="detail_2ndR">
+					
+				</div>
 			</div>
 		</div>
 		<!--底部-->
