@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>flypig-登录界面</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/jie/login.css" />
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jie/jieJS.js"></script>
+	</head>
+
+	<body>
+		<!--头部导航-->
+		<header class="clearfix">
+			<div class="login_nav">
+				<ul class="pull-right">
+					<li>
+						<a href="#">登录</a>
+					</li><span>|</span>
+					<li>
+						<a href="#">注册</a>
+					</li><span>|</span>
+					<li>
+						<a href="#">flypig首页</a>
+					</li><span>|</span>
+					<li>
+						<a href="#">联系客服</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!--主体内容-->
+		<div class="main-container">
+			<div class="logo">
+				<a href="#"><img src="img/jie/logo.png" /></a>
+				<h4>账号登录</h4>
+			</div>
+			<div class="logo_container">
+				<div class="reco_img">
+					<img src="img/jie/login_img_1.jpg" />
+				</div>
+				<div class="logo_table">
+					<div class="table_container">
+						<div id="choose_loginType">
+							<label class="logintype_active"><i><input type="radio" name="loginType" value="0" checked="checked"/></i>账号登录</label>
+							<label><i><input type="radio" name="loginType" value="1"/></i>短信验证码登录</label>
+						</div>
+						<br />
+						<form class="bs-example bs-example-form" role="form">
+							<div class="input-group">
+								<span class="input-group-addon"> <span class="glyphicon glyphicon-user"></span></span>
+								<input type="text" class="form-control" placeholder="手机号/邮箱/用户名">
+							</div>
+							<br>
+							<div class="input-group">
+								<span class="input-group-addon"> <span class="glyphicon glyphicon-lock"></span></span>
+								<input type="text" class="form-control" placeholder="请输入密码">
+							</div>
+							<br>
+							<div class="input-group yzm">
+								<input type="text" class="form-control" placeholder="验证码">
+								<img src="img/jie/yzm.jpg" />
+							</div>
+							<br>
+							<div class="login_help">
+								<label><input type="checkbox" name="autoLogin" value="1" />三个月内自动登录</label>
+								<a href="#">忘记密码</a>
+								<span>|</span>
+								<a href="#">立即注册</a>
+							</div>
+							<br />
+							<div>
+								<input type="submit" id="login_submit" name="login_submit" value="登录" class="btn btn-block" />
+							</div>
+							<!--分割符-->
+							<br />
+							<div class="cut_off">
+								<span>第三方账号登录</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

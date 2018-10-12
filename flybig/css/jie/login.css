@@ -1,0 +1,112 @@
+
+a{
+	text-decoration: none !important;
+}
+header{
+	background-color: #f5f5f5;
+	border-bottom: solid 1px #eae8e8;
+}
+header>.login_nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+header ul{
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+header li,
+header span {
+	display: inline-block;
+	margin-left: 10px;
+}
+/*主体内容*/
+.main-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.main-container .logo{
+	margin: 20px 0;
+}
+.main-container .logo img,
+.main-container .logo h4{
+	display: inline-block;
+}
+.main-container .logo h4{
+	margin: 0;
+	vertical-align: bottom;
+}
+.logo_container{
+	padding-top:20px ;
+	border-top: solid 1px #dcdcdc;
+}
+.reco_img{
+	float: left;
+	
+}
+.reco_img img{
+	border-radius: 15px;
+	width: 780px;
+	height: 500px;
+}
+.logo_table{
+	float: left;
+	width: 420px;
+	
+}
+.table_container{
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.table_container label{
+	font-weight: 400;
+}
+.table_container label:first-child{
+	margin-right: 40px;
+}
+.table_container i{
+	margin: 0 5px;
+}
+
+.logintype_active{
+	font-weight: bold !important;
+	font-size: 16px !important;
+}
+.table_container .yzm input{
+	width: 65% !important;
+}
+.table_container .yzm img{
+	display: inline-block;
+	width: 80px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.login_help>label{
+	margin-right: 25px !important;
+}
+.login_help input{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.login_help>span{
+	margin: 0 5px;
+}
+#login_submit{
+	font-size: 15px;
+	font-weight: 800;
+	color: white !important;
+	letter-spacing: 60px;
+	text-indent: 60px;
+	background-color: #6ab1df;
+}
+.cut_off{
+	width: 100%;
+	height: 10px;
+	border-bottom: solid 1px #dcdcdc;
+	text-align: center;
+}
+.cut_off span{
+	padding: 0 5px;
+	background-color: white;
+}
