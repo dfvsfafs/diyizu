@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>flypig-登录界面</title>
+		<title>flypig-注册界面</title>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/jie/login.css" />
@@ -37,75 +37,79 @@
 		<div class="main-container">
 			<div class="logo">
 				<a href="#"><img src="img/jie/logo.png" /></a>
-				<h4>账号登录</h4>
+				<h4>账号注册</h4>
 			</div>
-			<div class="logo_container">
-				<div class="reco_img">
-					<img src="img/jie/login_img_1.jpg" />
+			<div class="reg_container">
+				<div class="reg_form">
+					<form>
+						<!--使用手机号码注册-->
+						<div id="phone_reg">
+							<div class="form-group">
+								<label>国家/地区</label>
+								<div class="input_container"><input type="text" class="form-control"/></div>
+							</div>
+							<div class="form-group">
+								<label>手机号码</label>
+								<div class="input_container"><input type="text" class="form-control" placeholder="请输入手机号码"/></div>
+								<span style="color: darkgray">可用于激活码获取、密码找回、订单查询等</span>
+							</div>
+						</div>
+						<!--使用邮箱注册-->
+						<div id="email_reg" class="div_hidden">
+							<div class="form-group">
+								<label>注册邮箱</label>
+								<div class="input_container"><input type="text" class="form-control" placeholder="请输入注册邮箱"/></div>
+							</div>
+						</div>
+						
+						<!--共同部分-->
+						<div class="form-group">
+							<label>登录密码</label>
+							<div class="input_container"><input type="text" class="form-control" placeholder="请输入登录密码"/></div>
+						</div>
+						<div class="form-group">
+							<label>验证码</label>
+							<div class="input_container reg_yzm">
+								<input type="text" name="yzm" class="form-control" placeholder="请输入验证码"/>
+								<span><img src="img/jie/yzm.jpg"/> </span>
+								<a style="cursor: pointer;">换一张</a>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>激活码</label>
+							<div class="input_container reg_jhm">
+								<input type="text" name="jhm" class="form-control" placeholder="请输入激活码"/>
+								<button type="button" class="btn bg-primary">获取激活码</button>
+							</div>
+						</div>
+						<div class="form-group">
+							<label></label>
+							<div class="input_container">
+								<label>
+									<input type="checkbox" name="protocol_status" id="protocol_status" value="1" />
+									我已阅读并同意遵守 
+									<a href="#">《去哪儿用户服务协议》</a>
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label></label>
+							<div class="input_container">
+								<button type="submit" class="btn btn-danger">同意协议并注册</button>
+								<span>使用</span>
+								<a id="change_phone_reg">邮箱注册</a>
+								<a id="chang_email_reg" class="div_hidden">手机注册</a>
+							</div>
+						</div>
+					</form>
 				</div>
-				<div class="logo_table">
-					<div class="table_container">
-						<div id="choose_loginType">
-							<label class="logintype_active"><i><input type="radio" name="loginType" value="0" checked="checked"/></i>账号登录</label>
-							<label><i><input type="radio" name="loginType" value="1"/></i>短信验证码登录</label>
-						</div>
-						<br />
-						<form class="bs-example bs-example-form" role="form">
-							<!--账号登录-->
-							<div id="account_login">
-								<div class="input-group">
-									<span class="input-group-addon"> <span class="glyphicon glyphicon-user"></span></span>
-									<input type="text" class="form-control" placeholder="手机号/邮箱/用户名">
-								</div>
-								<br>
-								<div class="input-group">
-									<span class="input-group-addon"> <span class="glyphicon glyphicon-lock"></span></span>
-									<input type="text" class="form-control" placeholder="请输入密码">
-								</div>
-								<br>
-								<div class="input-group yzm">
-									<input type="text" class="form-control" placeholder="验证码">
-									<img src="img/jie/yzm.jpg" />
-								</div>
-								<br>
-								<div class="login_help">
-									<label><input type="checkbox" name="autoLogin" value="1" />三个月内自动登录</label>
-									<a href="#">忘记密码</a>
-									<span>|</span>
-									<a href="#">立即注册</a>
-								</div>
-							</div>
-							<!--手机号码登录-->
-							<div id="phone_login">
-								
-							</div>
-							<br />
-							<div>
-								<input type="submit" id="login_submit" name="login_submit" value="登录" class="btn btn-block" />
-							</div>
-							<!--分割符-->
-							<br />
-						</form>
-						<div class="cut_off">
-							<span>第三方账号登录</span>
-						</div>
-						<div class="Other_party_payment">
-							<ul class="list-unstyled list-inline">
-								<li><span><img src="img/jie/icon16_wx_logo.png"/></span>
-									<a href="#">微信</a>
-								</li>
-								<li><span><img src="img/jie/login_QQ_icon.png"/></span>
-									<a href="#">QQ</a>
-								</li>
-								<li><span><img src="img/jie/login_WB_icon.png" style="position: relative;top: -2px;"/></span>
-									<a href="#">新浪微博</a>
-								</li>
-								<li><span><img src="img/jie/login_zfb_icon.png" style="position: relative;top: -2px;"/></span>
-									<a href="#">支付宝</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+				<div class="reg_tip">
+					<p>注册成为“去哪儿”的用户后，您可以：</p>
+					<ul>
+						<li>畅游与去哪儿合作的<span>机票</span>、<span>酒店</span>、<span>度假</span>代理商网站，轻松管理订单</li>
+						<li>查询、计划、管理您的预订信息</li>
+						<li>享受优质超低价格<span>团购</span>服务</li>
+					</ul>
 				</div>
 			</div>
 		</div>
