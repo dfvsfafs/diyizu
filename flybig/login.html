@@ -51,26 +51,33 @@
 						</div>
 						<br />
 						<form class="bs-example bs-example-form" role="form">
-							<div class="input-group">
-								<span class="input-group-addon"> <span class="glyphicon glyphicon-user"></span></span>
-								<input type="text" class="form-control" placeholder="手机号/邮箱/用户名">
+							<!--账号登录-->
+							<div id="account_login">
+								<div class="input-group">
+									<span class="input-group-addon"> <span class="glyphicon glyphicon-user"></span></span>
+									<input type="text" class="form-control" placeholder="手机号/邮箱/用户名">
+								</div>
+								<br>
+								<div class="input-group">
+									<span class="input-group-addon"> <span class="glyphicon glyphicon-lock"></span></span>
+									<input type="text" class="form-control" placeholder="请输入密码">
+								</div>
+								<br>
+								<div class="input-group yzm">
+									<input type="text" class="form-control" placeholder="验证码">
+									<img src="img/jie/yzm.jpg" />
+								</div>
+								<br>
+								<div class="login_help">
+									<label><input type="checkbox" name="autoLogin" value="1" />三个月内自动登录</label>
+									<a href="#">忘记密码</a>
+									<span>|</span>
+									<a href="#">立即注册</a>
+								</div>
 							</div>
-							<br>
-							<div class="input-group">
-								<span class="input-group-addon"> <span class="glyphicon glyphicon-lock"></span></span>
-								<input type="text" class="form-control" placeholder="请输入密码">
-							</div>
-							<br>
-							<div class="input-group yzm">
-								<input type="text" class="form-control" placeholder="验证码">
-								<img src="img/jie/yzm.jpg" />
-							</div>
-							<br>
-							<div class="login_help">
-								<label><input type="checkbox" name="autoLogin" value="1" />三个月内自动登录</label>
-								<a href="#">忘记密码</a>
-								<span>|</span>
-								<a href="#">立即注册</a>
+							<!--手机号码登录-->
+							<div id="phone_login">
+								
 							</div>
 							<br />
 							<div>
@@ -78,10 +85,26 @@
 							</div>
 							<!--分割符-->
 							<br />
-							<div class="cut_off">
-								<span>第三方账号登录</span>
-							</div>
 						</form>
+						<div class="cut_off">
+							<span>第三方账号登录</span>
+						</div>
+						<div class="Other_party_payment">
+							<ul class="list-unstyled list-inline">
+								<li><span><img src="img/jie/icon16_wx_logo.png"/></span>
+									<a href="#">微信</a>
+								</li>
+								<li><span><img src="img/jie/login_QQ_icon.png"/></span>
+									<a href="#">QQ</a>
+								</li>
+								<li><span><img src="img/jie/login_WB_icon.png" style="position: relative;top: -2px;"/></span>
+									<a href="#">新浪微博</a>
+								</li>
+								<li><span><img src="img/jie/login_zfb_icon.png" style="position: relative;top: -2px;"/></span>
+									<a href="#">支付宝</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

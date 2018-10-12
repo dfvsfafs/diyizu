@@ -58,6 +58,9 @@ header span {
 	margin: 0 auto;
 	margin-top: 40px;
 }
+.table_container form{
+	height: 280px;
+}
 .table_container label{
 	font-weight: 400;
 }
@@ -105,8 +108,25 @@ header span {
 	height: 10px;
 	border-bottom: solid 1px #dcdcdc;
 	text-align: center;
+	margin-top: 40px;
 }
 .cut_off span{
 	padding: 0 5px;
 	background-color: white;
+}
+.Other_party_payment {
+	margin-top: 30px;
+}
+.Other_party_payment li{
+	margin-right: 4px;
+	cursor: pointer;
+}
+.Other_party_payment li:last-child{
+	margin: 0px !important;
+}
+.Other_party_payment li span{
+	margin-right: 2px;
+}
+.Other_party_payment li img{
+	width: 16px;
 }
