@@ -6,6 +6,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/fzm/index.css"/>
+		<link rel="stylesheet" href="css/jie/User.css" />
 		<script type="text/javascript" src="js/tyw/jquery-3.3.1.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 		<script src="js/fzm/index.js" type="text/javascript" charset="utf-8"></script>
@@ -368,18 +369,104 @@
      </div>
       <!--头部结束-->
       <!--主要内容开始-->
-      <div class="main container-fluid" >
+      <div class="User_main container-fluid" >
+      	<!--用户界面主导航-->
 		<nav>
-			<ul class="nav nav-pills">
-			  <li class="active"><a href="#">Home</a></li>
-			  <li><a href="#">SVN</a></li>
-			  <li><a href="#">iOS</a></li>
-			  <li><a href="#">VB.Net</a></li>
-			  <li><a href="#">Java</a></li>
-			  <li><a href="#">PHP</a></li>
+			<ul class="nav nav-tabs User_nav">
+			  <li class="active"><a href="#">我的账户</a></li>
+			  <li><a href="#">我的订单</a></li>
+			  <li><a href="#">账户设置</a></li>
+			  <li><a href="#">帮助</a></li>
 			</ul>
 		</nav>
+	    <!--主导航结束-->
 	    
+	    <!--我的账户模块-->
+	    <div class="User_myAcount clearfix">
+	    	<!--我的账户导航-->
+	    	<div class="myAccount_nav pull-left">
+	    		<ul class="nav nav-pills nav-stacked text-center">
+				  <li class="active"><a href="#">首页</a></li>
+				  <li><a href="#">账户余额</a></li>
+				  <li><a href="#">交易记录</a></li>
+				  <li><a href="#">安全管理</a></li>
+				</ul>
+	    	</div>
+	    	<!--我的账户主内容-->
+	    	<div class="myAccount_main pull-left">
+	    		<!--我的账户首页-->
+	    		<div class="myAccount_SY clearfix">
+	    			<!--主内容-->
+	    			<div class="myAccount_SY_mian pull-left">
+	    				<div class="ASM_L pull-left clearfix">
+	    					<!--账户余额-->
+	    					<div class="container-fluid A_balance divBuleBorder">
+	    						<h5><span></span>账户余额</h5>
+	    						<p>
+	    							<div class="A_balanceMoney">
+	    								<span><strong>0</strong>.00</span>   元
+	    							</div>
+	    							<a>提现</a>
+	    						</p>
+	    					</div>
+	    					<div class="container-fluid A_hongbao divBuleBorder">
+	    						<h5><span></span>红包 <a class="pull-right hiddenBtn">添加</a></h5>
+	    						<p class="text-center">暂无红包</p>
+	    					</div>
+	    				</div>
+	    				<!--账户资产-->
+	    				<div class="container-fluid ASM_R pull-left divBuleBorder clearfix">
+	    					<h5><span></span>账户资产</h5>
+	    					<table class="table table-hover ASM_R_table">
+	    						<tr>
+	    							<td><span><img src="img/jie/lvxingka-gray.png"/></span>礼品卡</td>
+	    							<td><span>0.00</span>元<a class="hiddenBtn pull-right">详情</a></td>
+	    							
+	    						</tr>
+	    						<tr>
+	    							<td><span><img src="img/jie/daituikuang-gray.png"/></span>待退款</td>
+	    							<td><span>0.00</span>元<a class="hiddenBtn pull-right">详情</a></td>
+	    							
+	    						</tr>
+	    						<tr>
+	    							<td><span><img src="img/jie/changyongka-gray.png"/></span>常用卡</td>
+	    							<td><span>0</span>张<a class="hiddenBtn pull-right">详情</a></td>
+	    							
+	    						</tr>
+	    						<tr>
+	    							<td><span><img src="img/jie/hongbao-gray.png"/></span>红包</td>
+	    							<td><span>0</span>个<a class="hiddenBtn pull-right">详情</a></td>
+	    							
+	    						</tr>
+	    					</table>
+	    				</div>
+	    				<div style="clear: both;"></div>
+	    				<!--最近充值记录-->
+	    				<div class="ASM_ZJCZJL">
+	    					<h4 class="container-fluid">最近充值记录  <a class="pull-right">更多</a></h4>
+	    					<div class="ASM_ZJCZJL_data">
+	    						<div class="text-center">您最近三个月没有充值记录</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<!--右侧边栏-->
+	    			<div class="myAccount_SY_right pull-left">
+	    				<div class="A_info divBuleBorder">
+	    					<h5><span></span>账户余额</h5>
+	    					<div class="media A_user_info">
+							  <div class="media-left">
+							    <img src="img/jie/ecf17d09dfe862ba.png_r_150x150_06460b4f.png" class="media-object" style="width:120px">
+							  </div>
+							  <div class="media-body">
+							    <p>昵称:<span id="user_name">sdada</span></p>
+							    <p>手机号:<span id="user_ph">sdada</span></p>
+							  </div>
+							</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
 	      
 	      
       </div>

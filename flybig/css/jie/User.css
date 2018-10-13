@@ -1,0 +1,173 @@
+/*通用样式*/
+a {
+	text-decoration: none;
+	color: black;
+}
+/*div框的hover边框*/
+.divBuleBorder:hover {
+	border-color: #2cabc4 !important;
+}
+.hiddenBtn {
+	display: none;
+	font-size: 14px;
+	font-weight: 400;
+	color: #0087c6;
+}
+
+
+/*独立样式*/
+.User_main {
+	width: 1200px;
+}
+.User_main nav {
+	margin-top: 15px;
+}
+.User_nav {
+	font-size: 16px;
+	font-weight: 400;
+}
+.User_nav li a{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+/*我的账户导航*/
+.myAccount_nav {
+	width: 100px;
+	margin-top: 30px;
+}
+.myAccount_nav li {
+	font-size: 14px;
+}
+.myAccount_nav li.active a{
+	background-color: #2cabc4 !important;
+}
+
+/*我的账户主内容*/
+.myAccount_main {
+	width: 1020px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+	.myAccount_main h5 {
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.myAccount_main h5 span {
+			display: inline-block;
+			width: 2px;
+			height: 15px;
+			margin-right: 5px;
+			vertical-align: bottom;
+			background-color: #2cabc4;
+		}
+		
+		
+.myAccount_SY_mian {
+	width: 740px;
+	box-sizing: border-box;
+}
+.myAccount_SY_right {
+	width: 280px;
+	box-sizing: border-box;
+}
+.myAccount_SY_mian .ASM_L{
+	width: 60%;
+}
+/*账户余额*/
+.A_balance,
+.A_hongbao{
+	width: 100%;
+	height: 120px;
+	border: solid .5px gainsboro;
+}
+	.A_balanceMoney{
+		display: inline;
+		font-size: 20px;
+	}
+		.A_balanceMoney span {
+			color: #f60;
+		}
+		.A_balanceMoney span strong {
+			font-size: 30px;
+			font-weight: 400;
+		}
+		.A_balanceMoney+a {
+			margin-left: 40px;
+			font-size: 14px; 
+			color: #0087c6;
+		}
+/*红包*/
+	.A_hongbao:hover .hiddenBtn {
+		display: block;
+	}
+/*账户资产*/
+.myAccount_SY_mian .ASM_R{
+	width: 40%;
+	height: 240px;
+	border: solid .5px gainsboro;
+}
+	.ASM_R_table {
+		color: gray;
+	}
+		.ASM_R_table tr:hover .hiddenBtn {
+			display: block;
+		}
+		.ASM_R_table tr td:first-child {
+			width: 50%;
+		}
+		.ASM_R_table tr td:first-child img{
+			margin-right: 10px;
+			vertical-align: top;
+		}
+	 	.ASM_R_table td{
+	 		border-top: solid;
+	 		border-bottom: solid;
+	 		border-color: transparent !important;
+	 	}
+		.ASM_R_table td a {
+			font-size: 12px;
+		}
+/*最近充值记录*/
+.myAccount_SY_mian .ASM_ZJCZJL {
+	width: 100%;
+	margin-top: 25px;
+	box-sizing: border-box;
+	border: solid 1px gainsboro;
+}
+	.ASM_ZJCZJL h4 {
+		margin: 0;
+		height: 35px;
+		line-height: 35px;
+		font-size: 14px;
+		font-weight: bold;
+		border-bottom: solid .5px gainsboro;
+		background-color: #f7f7f7;
+	}
+	.ASM_ZJCZJL_data {
+		height: 240px;
+		line-height: 240px;
+	}
+
+/*右边框*/
+/*账户信息*/
+.A_info {
+	width: 100%;
+	margin-left: 15px;
+	border: solid .5px gainsboro;
+}
+.A_info h5 {
+	margin-left: 10px;
+}
+.A_info h5 span {
+	width: 3px;
+}
+	.A_user_info {
+		margin-bottom: 20px;
+	}
+	.A_user_info p {
+		font-size: 12px;
+		font-weight: 100;
+	}
+	.A_user_info p span {
+		margin-left: 10px;
+	}
