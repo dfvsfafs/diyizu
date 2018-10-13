@@ -10,11 +10,13 @@ $(document).ready(function(){
 	})
 	
 	$("#accountType").click(function(){
+		$("#login_tip").html("");
 		$("#account_login").removeClass("div_hidden");
 		$("#phone_login").addClass("div_hidden");
 	})
 	
 	$("#phoneType").click(function(){
+		$("#login_tip").html("");
 		$("#account_login").addClass("div_hidden");
 		$("#phone_login").removeClass("div_hidden");
 	})
@@ -118,6 +120,36 @@ $(document).ready(function(){
 	})
 	
 	//登录界面的错误提示
-	
+	$("#login_submit").click(function(){
+		
+		
+		if($("#accountType input").is(':checked') == true){
+			$("#login_tip").html("");
+			if($("input[name='username_a']").val()==""){
+				$text = '<p>账户错误</p>';
+				$("#login_tip").append($text)
+			}
+			if($("input[name='user_pwd_a']").val()==""){
+				$text = '<p>密码错误</p>';
+				$("#login_tip").append($text)
+			}
+			if($("input[name='yzm_a']").val()==""){
+				$text = '<p>验证码错误</p>';
+				$("#login_tip").append($text)
+			}
+		}else if($("#phoneType input").is(':checked') == true){
+			$("#login_tip").html("");
+			if($("input[name='username_a']").val()==""){
+				$text = '<p>手机号码错误</p>';
+				$("#login_tip").append($text)
+			}
+			if($("input[name='yzm_a']").val()==""){
+				$text = '<p>验证码错误</p>';
+				$("#login_tip").append($text)
+			}
+		}
+		
+		
+	})
 	
 })

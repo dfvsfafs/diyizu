@@ -122,8 +122,10 @@ header span {
 	color: red;
 }
 #login_tip p{
+	font-size: 10px;
 	padding-left: 20px;
 	background: url(../../img/jie/error_v2.png) no-repeat;
+	background-size: 12px;
 }
 .cut_off{
 	width: 100%;
