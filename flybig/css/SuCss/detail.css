@@ -383,6 +383,7 @@
 	width: 70px;
 	height: 25px;
 	border: none;
+	outline: none;
 }
 .shop_in{
 	margin-left: 23px;
@@ -426,6 +427,7 @@
 	width: 35px;
 	height: 25px;
 	margin: 0px 5px;
+	outline: none;
 }
 .detail_2L_2nd>div>p>button{
 	width: 50px;
@@ -470,7 +472,7 @@
 	padding: 0px 8px;
 }
 .rank_same{
-	width: 170px;
+	width: 172px;
 	padding: 5px 0px;
 	margin: 10px auto;
 	border: 1px #dcdcdc solid;
@@ -496,7 +498,14 @@
 	height: 16px;
 	background: url(../../img/SuImg/detail_za.png)no-repeat -15px -111px;
 }
-.classify_minus>a{
+.classify_empty>i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 13px;
+	height: 16px;
+	background: url(../../img/SuImg/detail_za.png)no-repeat 0px -111px;
+}
+.classify_minus>a,.classify_empty>a{
 	color: #666;
 	text-decoration: none;
 }
@@ -507,3 +516,4 @@
 .classify_red>a:hover{
 	color: #f40;
 }
+.classify_city{padding-left: 15px;}
