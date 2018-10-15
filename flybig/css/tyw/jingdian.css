@@ -62,7 +62,7 @@ body{
 }
 .classify{
 	position: absolute;
-	opacity: 0.9;
+	opacity: 0.8;
 	background: black;
 	height: 40px;	
 	color: gray;
@@ -224,6 +224,9 @@ body{
 	font-size: 12px;
 	color: #3d3d3d;
 } 
+.footer-item1 ul li a:hover{
+	text-decoration: underline !important;
+}
 .footer-ail {
 	height: 50px;
 	border-bottom: 1px solid lavender;
@@ -236,6 +239,9 @@ body{
 .footer-ail ul li a{
 	color: #6c6c6c;
 }
+.footer-ail ul li a:hover{
+	text-decoration: underline !important;
+}
 .footer-nav{
 	height: 26px;
 }
@@ -246,6 +252,9 @@ body{
 }
 .footer-nav ul li a{
 	color: #6c6c6c;;
+}
+.footer-nav ul li a:hover{
+	text-decoration: underline !important;
 }
 .footer-copyright{
 	color: #999;
