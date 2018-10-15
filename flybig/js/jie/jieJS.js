@@ -152,4 +152,39 @@ $(document).ready(function(){
 		
 	})
 	
+//	用户管理界面
+	$(".User_nav li").click(function(){
+		var $lis = $(".User_nav li");
+		for (var i=0;i<$lis.length;i++){
+			$lis.eq(i).removeClass("active");
+		}
+		$(this).addClass("active");
+	})
+	$(".myAccount_nav li").click(function(){
+		var $lis = $(".myAccount_nav li");
+		var $divs = $(".myAccount_main>div");
+		var $index = $(this).index();
+		for (var i=0;i<$lis.length;i++){
+			$lis.eq(i).removeClass("active");
+			$divs.eq(i).addClass("div_hidden");
+		}
+		$(this).addClass("active");
+		$divs.eq($index).removeClass("div_hidden");
+	})
+	
+	$(".myIndent_nav li").click(function(){
+		var $lis = $(".myIndent_nav li");
+		for (var i=0;i<$lis.length;i++){
+			$lis.eq(i).removeClass("MY_nav_active");
+		}
+		$(this).addClass("MY_nav_active");
+	})
+	
+	$(".QB_indent li").click(function(){
+		var $lis = $(".QB_indent li");
+		for (var i=0;i<$lis.length;i++){
+			$lis.eq(i).removeClass("I_active");
+		}
+		$(this).addClass("I_active");
+	})
 })

@@ -220,6 +220,7 @@ a {
 		font-size: 16px;
 		margin-top: 10px;
 	}
+	/*我的账户余额详情*/
 	.MA_YE_detail>div>ul {
 		box-sizing: border-box;
 		border-top: 2px solid #d2ebfa;
@@ -240,6 +241,204 @@ a {
 		font-size: 30px;
 		color: #6c6c6c;
 	}
+	.MA_YE_detail>div>ul>li a {
+		margin-left: 10px;
+		color: #337AB7;
+	}
+	.MA_YE_detail>div>ul>li i{
+		font-style: normal;
+		padding-left: 10px;
+		color: #ADADAD;
+	}
+	.MA_YE_detail>div>ul>li i img{
+		padding-left: 5px;
+		vertical-align: middle;
+		cursor: pointer;
+	}
 		#YE {
 			color: #f60;
+		}
+	/*我的账户收支情况*/
+	.MA_YE_SZMX>div {
+		width: 100%;
+	}
+	.MA_YE_SZMX>div>div:first-child {
+		padding: 0 15px;
+	}
+	.MA_YE_SZMX>div>div:last-child {
+		border-bottom: solid 1px gainsboro;
+	}
+	.MA_YE_SZMX>div label {
+		margin-right: 20px;
+		padding: 10px 0;
+	}
+	.MA_YE_SZMX>div label input {
+		margin-right: 5px;
+		vertical-align: text-bottom;
+	}
+	.MA_YE_SZMX>div thead {
+		background-color: #f4f8f9;
+	}
+	.MA_YE_SZMX_not {
+		text-align: center;
+		height: 60px;
+		line-height: 60px;
+		vertical-align: bottom;
+	}
+/*交易记录*/
+.myAccount_JYJL h3{
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.myAccount_JYJL>div>span,
+.myAccount_JYJL>div>div>span {
+	color: #AFADAD;
+	padding-right: 5px;
+}
+	.choose_date {
+		padding-left: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-top: solid 2px #2AABD2;
+		background-color: #f4f5f7;
+	}
+	input[type=date]::-webkit-inner-spin-button { 
+		visibility: hidden; 
+	}
+	input[type=date]::-webkit-calendar-picker-indicator {
+	    border: 1px solid #ccc;
+	    border-radius: 2px;
+	    box-shadow: inset 0 1px #fff, 0 1px #eee;
+	    background-color: #eee;
+	    background-image: -webkit-linear-gradient(top, #f0f0f0, #e6e6e6);
+	    color: #666;
+	}
+	.choose_transaction {
+		border-top: solid 1px gainsboro;
+		background-color: #f8f9fb;
+	}
+	.choose_transaction>div {
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.choose_transaction label {
+		margin-left: 15px;
+	}
+	.choose_transaction input {
+		vertical-align: text-bottom;
+		margin-right: 5px;
+	}
+	/*交易详情*/
+	.MAJYJL_detail {
+		margin-top: 20px;
+		border-bottom: solid 1px gainsboro;
+	}
+	.MAJYJL_detail thead {
+		background-color: #f4f5f7;
+	}
+	.MAJYJL_detail th {
+		text-align: center;
+		border: none !important;
+	}
+
+
+/*我的订单*/
+.myIndent {
+	width: 100%;
+	margin-top: 20px;
+}
+	.myIndent_nav {
+		box-sizing: border-box;
+		background-color: #f7f9fa;
+		border: solid 1px gainsboro;
+		border-bottom: none;
+	}
+	.myIndent_nav ul {
+		padding: 0;
+		margin: 0;
+	}
+	.myIndent_nav li {
+		float: left;
+		padding: 10px 25px;
+		font-size: 16px;
+		color: gray;
+		cursor: pointer;
+	}
+		.MY_nav_active {
+			border-bottom: 2px solid #009bb3;
+		}
+	.myIndent_nav a {
+		color: gray;
+		margin-top: 12px;
+		margin-right: 25px;
+		padding-left: 15px;
+		background: url(../../img/jie/iconpic.png) no-repeat 0px -17px;
+		font-size: 14px;
+	}
+	.QB_indent>div:first-child {
+		padding-left: 15px;
+		font-size: 15px;
+		border: solid 1px gainsboro;
+	}
+	.QB_indent>div:first-child label {
+		padding: 15px 0;
+		margin-right: 15px;
+		font-weight: 200;
+	}
+	.QB_indent>div:first-child label select {
+		width: 100px;
+		height: 30px;
+	}
+	.QB_indent>div:first-child label input[type='date'] {
+		height: 30px;
+	}
+	.QB_indent>div:first-child ul {
+		display: inline-block;
+		padding: 0;
+	}
+	.QB_indent>div:first-child ul li {
+		display: inline-block;
+		padding: 2px 6px;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+	.I_active {
+		background-color: #2cabc4;
+		color: white;
+	}
+	.search_result {
+		height: 80px;
+		line-height: 160px;
+		text-align: center;
+	}
+/*账户设置*/
+.myAccount_set {
+	margin-top: 20px;
+}
+	.peronal_info {
+		border: solid 1px #eff2f4;
+		border-top: solid 1.5px #b0d9ff;
+		padding: 10px;
+	}
+		.personal_TX {
+			position: relative;
+			padding: 10px 5px;
+			background-color: #DBDBDB;	
+		}
+		.change_tx {
+			position: absolute;
+			bottom: 5px;
+			width: 120px;
+			text-align: center;
+			color: white;
+			cursor: pointer;
+			background-color: rgba(0,0,0,.3);
+		}
+		.personal_TX+div {
+			padding-left: 20px;
+		}
+		.personal_TX+div>p>span:first-child {
+			
 		}

@@ -5,10 +5,12 @@
 		<title>flyPig-我的旅行</title>
 		
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/jie/import.css" />
 		<link rel="stylesheet" type="text/css" href="css/fzm/index.css"/>
 		<link rel="stylesheet" href="css/jie/User.css" />
-		<script type="text/javascript" src="js/tyw/jquery-3.3.1.js" ></script>
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/jie/jieJS.js" ></script>
 		<script src="js/fzm/index.js" type="text/javascript" charset="utf-8"></script>
 				
 	</head>
@@ -382,20 +384,19 @@
 	    <!--主导航结束-->
 	    
 	    <!--我的账户模块-->
-	    <div class="User_myAcount clearfix">
+	    <div class="User_myAcount clearfix div_hidden">
 	    	<!--我的账户导航-->
 	    	<div class="myAccount_nav pull-left">
 	    		<ul class="nav nav-pills nav-stacked text-center">
 				  <li class="active"><a href="#">首页</a></li>
 				  <li><a href="#">账户余额</a></li>
 				  <li><a href="#">交易记录</a></li>
-				  <li><a href="#">安全管理</a></li>
 				</ul>
 	    	</div>
 	    	<!--我的账户主内容-->
 	    	<div class="myAccount_main pull-left">
 	    		<!--我的账户首页-->
-	    		<div class="myAccount_SY clearfix div_hidden">
+	    		<div class="myAccount_SY clearfix">
 	    			<!--主内容-->
 	    			<div class="myAccount_SY_mian pull-left">
 	    				<div class="ASM_L pull-left clearfix">
@@ -485,7 +486,7 @@
 	    		</div>
 	    		
 	    		<!--账户余额-->
-	    		<div class="myAccount_YE">
+	    		<div class="myAccount_YE div_hidden">
 	    			<!--账户余额明细-->
 	    			<div class="MA_YE_detail">
 	    				<h3>账户余额</h3>
@@ -501,20 +502,171 @@
 	    						</li>
 	    						<li>
 	    							<h6>返现金额(元)</h6>
-	    							<p><span id="FXJE">0.00</span></p>
+	    							<p><span id="FXJE">0.00</span><i>暂不可提现<img src="img/jie/question.png" title="返现金余额不足1.00元，不可提现"/></i></p>
 	    						</li>
 	    						<li>
-	    							<h6>冻结余额(元)</h6>
+	    							<h6>冻结余额(元)<i><img src="img/jie/question.png" title="冻结金额是指尚未到达解冻时间的提现现金"/></i></h6>
 	    							<p><span id="DJYE">0.00</span></p>
 	    						</li>
 	    					</ul>
 	    				</div>
 	    			</div>
+	    			<!--收支明细-->
+	    			<div class="MA_YE_SZMX">
+	    				<h3>收支明细</h3>
+	    				<div>
+	    					<div style="background-color: #fcfcfe;">	
+	    						<label><input type="radio" name="szmx" id="" value="" />充值</label>
+	    						<label><input type="radio" name="szmx" id="" value="" />返现</label>
+	    						<label><input type="radio" name="szmx" id="" value="" />支付</label>
+	    						<label><input type="radio" name="szmx" id="" value="" />提现</label>
+	    						<label><input type="radio" name="szmx" id="" value="" />退款</label>
+	    					</div>
+	    					<div>
+	    						<table class="table">
+	    							<thead>
+	    								<tr>
+		    								<th>日期</th>
+		    								<th>订单号</th>
+		    								<th>名称</th>
+		    								<th>手续费</th>
+		    								<th>收/支</th>
+		    								<th>金额(¥)</th>
+		    								<th>状态</th>
+		    							</tr>
+	    							</thead>
+	    							<tbody>
+	    								<tr>
+	    									<td colspan="6">
+	    										<p class="MA_YE_SZMX_not">没有找到收支明细记录，请调整搜索条件。</p>
+	    									</td>
+	    								</tr>
+	    							</tbody>
+	    						</table>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		
+	    		<!--交易记录-->
+	    		<div class="myAccount_JYJL div_hidden">
+	    			<h3>交易记录</h3>
+	    			<div class="choose_date">
+	    				<span>起止日期</span>
+	    				<input type="date" name="S_date"/>
+	    				-
+	    				<input type="date" name="T_date"/>
+	    			</div>
+	    			<div class="choose_transaction">
+	    				<div>
+	    					<span>交易类型</span>
+	    					<label><input type="radio" name="JYLX" value="" />充值</label>
+	    					<label><input type="radio" name="JYLX" value="" />返现</label>
+	    					<label><input type="radio" name="JYLX" value="" />支付</label>
+	    					<label><input type="radio" name="JYLX" value="" />提现</label>
+	    					<label><input type="radio" name="JYLX" value="" />退款</label>
+	    				</div>
+	    				<div>
+	    					<span>交易状态</span>
+	    					<label><input type="radio" name="JYZT" value="" />全部</label>
+	    					<label><input type="radio" name="JYZT" value="" />成功</label>
+	    					<label><input type="radio" name="JYZT" value="" />失败</label>
+	    					<label><input type="radio" name="JYZT" value="" />其他</label>
+	    				</div>
+	    			</div>
+	    			<div class="MAJYJL_detail">
+	    				<table class="table">
+	    					<thead>
+	    						<tr>
+		    						<th>创建时间</th>
+		    						<th>完成时间</th>
+		    						<th>订单号</th>
+		    						<th>交易类型</th>
+		    						<th>资金来源</th>
+		    						<th>手续费</th>
+		    						<th>交易金额(¥)</th>
+		    						<th>交易状态</th>
+		    					</tr>
+	    					</thead>
+	    					<tbody>
+	    						<tr>
+	    							<td colspan="8">
+	    								<p class="MA_YE_SZMX_not">没有找到收支明细记录，请调整搜索条件。</p>
+	    							</td>
+	    						</tr>
+	    					</tbody>
+	    				</table>
+	    			</div>
 	    		</div>
 	    	</div>
 	    </div>
 	      
-	      
+	     <!--我的订单-->
+	    <div class="myIndent pull-left div_hidden">
+	    	<!--我的订单导航-->
+	    	<div class="myIndent_nav">
+	    		<ul class="clearfix">
+	    			<li class="MY_nav_active">全部订单</li>
+	    			<li>有效订单</li>
+	    			<li>退款订单</li>
+	    			<li>带绑定订单</li>
+	    			<a class="pull-right">订单回收站</a>
+	    		</ul>
+	    	</div>
+	    	<!--我的订单主要内容-->
+	    	<div class="myIndent_main">
+	    		<div class="QB_indent">
+	    			<div>
+	    				<label>订单类型 
+	    					<select>
+	    						<option value ="">全部</option>
+							  	<option value ="">机票</option>
+							  	<option value="">酒店</option>
+							 	<option value="">公寓</option>
+							 	<option value="">门票</option>
+							 	<option value="">火车票</option>
+							 	<option value="">公寓</option>
+							 	<option value="">金融</option>
+							 	<option value="">礼品卡</option>
+	    					</select>
+	    				</label>
+	    				<label>订单时间
+	    					<input type="date" name="" id="" value="" />
+	    					<input type="date" name="" id="" value="" />
+	    				</label>
+	    				<ul>
+	    					<li class="I_active">最近一个月</li>
+	    					<li>三个月</li>
+	    					<li>一年</li>
+	    				</ul>
+	    			</div>
+	    			<div class="search_result">
+	    				<p>没有符合条件的订单，请尝试其他搜索条件</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<!--我的订单内容结束-->
+	    </div>
+      	<!--账户设置-->
+      	<div class="myAccount_set">
+      		<div class="peronal_info divBuleBorder">
+      			<div class="media">
+				  <div class="media-left personal_TX">
+				    <img src="img/jie/ecf17d09dfe862ba.png_r_150x150_06460b4f.png" class="media-object" style="width:120px">
+				  	<div class="change_tx">
+				  		修改头像
+				  	</div>
+				  </div>
+				  <div class="media-body">
+				    <p><span>昵称</span> <span>gazc2500</span> </p>
+				     <p><span>昵称</span> <span>gazc2500</span> </p>
+				     <p><span>昵称</span> <span>gazc2500</span> </p>
+				     <p><span>昵称</span> <span>gazc2500</span> </p>
+				     <p><span>昵称</span> <span>gazc2500</span> </p>
+				  </div>
+				</div>
+      		</div>
+      	</div>
       </div>
       <!--主要内容结束-->
       
