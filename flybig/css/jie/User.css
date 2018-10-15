@@ -3,6 +3,9 @@ a {
 	text-decoration: none;
 	color: black;
 }
+.div_hidden {
+	display: none;
+}
 /*div框的hover边框*/
 .divBuleBorder:hover {
 	border-color: #2cabc4 !important;
@@ -61,7 +64,7 @@ a {
 			background-color: #2cabc4;
 		}
 		
-		
+/*我的账户首页*/
 .myAccount_SY_mian {
 	width: 740px;
 	box-sizing: border-box;
@@ -144,16 +147,27 @@ a {
 		background-color: #f7f7f7;
 	}
 	.ASM_ZJCZJL_data {
-		height: 240px;
-		line-height: 240px;
+		height: 198px;
+		line-height: 198px;
 	}
 
 /*右边框*/
 /*账户信息*/
-.A_info {
+.A_info,
+.A_tip {
 	width: 100%;
 	margin-left: 15px;
+	padding: 1px;
 	border: solid .5px gainsboro;
+	box-sizing: border-box;
+}
+.A_tip {
+	margin-top: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.A_tip:hover .hiddenBtn{
+	display: block;
 }
 .A_info h5 {
 	margin-left: 10px;
@@ -171,3 +185,61 @@ a {
 	.A_user_info p span {
 		margin-left: 10px;
 	}
+	.A_user_info_foot {
+		height: 40px;
+		line-height: 40px;
+		margin-top: 36px;
+		background-color: #fbfcfd;
+		border-top: 1px solid #f3f5f7;
+	}
+	.A_user_info_foot img{
+		/*vertical-align: text-top;px*/
+		margin-right: 10px;
+		margin-bottom: 2px;
+	}
+	.A_tip_list{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.A_tip_list ul {
+		list-style: none;
+		padding: 0;
+	}
+	.A_tip_list li {
+		margin: 5px 0;
+	}
+	.A_tip_list a {
+		color: #0084bb;
+	}
+/*我的账户余额*/
+.myAccount_YE div {
+	width: 100%;
+}
+	.myAccount_YE h3 {
+		font-weight: bold;
+		font-size: 16px;
+		margin-top: 10px;
+	}
+	.MA_YE_detail>div>ul {
+		box-sizing: border-box;
+		border-top: 2px solid #d2ebfa;
+		padding-left: 0px;
+		background-color: #f6fbfe;
+	}
+	.MA_YE_detail>div>ul>li {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		margin: 15px 0;
+		border-left: solid 1px #D3D3D3;
+	}
+	.MA_YE_detail>div>ul>li>h6 {
+		color: #9a9a9c;
+	}
+	.MA_YE_detail>div>ul>li span {
+		font-size: 30px;
+		color: #6c6c6c;
+	}
+		#YE {
+			color: #f60;
+		}

@@ -395,7 +395,7 @@
 	    	<!--我的账户主内容-->
 	    	<div class="myAccount_main pull-left">
 	    		<!--我的账户首页-->
-	    		<div class="myAccount_SY clearfix">
+	    		<div class="myAccount_SY clearfix div_hidden">
 	    			<!--主内容-->
 	    			<div class="myAccount_SY_mian pull-left">
 	    				<div class="ASM_L pull-left clearfix">
@@ -453,7 +453,7 @@
 	    			<div class="myAccount_SY_right pull-left">
 	    				<div class="A_info divBuleBorder">
 	    					<h5><span></span>账户余额</h5>
-	    					<div class="media A_user_info">
+	    					<div class="media A_user_info clearfix">
 							  <div class="media-left">
 							    <img src="img/jie/ecf17d09dfe862ba.png_r_150x150_06460b4f.png" class="media-object" style="width:120px">
 							  </div>
@@ -462,6 +462,52 @@
 							    <p>手机号:<span id="user_ph">sdada</span></p>
 							  </div>
 							</div>
+							<div class="A_user_info_foot container-fluid">
+							    <img src="img/jie/auth-gray-new.png" />
+							    <span>您还未通过实名认证</span>
+							    <a class="pull-right">立即认证</a>
+							</div>
+	    				</div>
+	    				<div class="container-fluid A_tip divBuleBorder">
+	    					<h5><span></span>账户余额 <a class="hiddenBtn pull-right">详情</a></h5>
+	    					<div class="A_tip_list">
+	    						<ul> 
+	    							<li><a>为什么钱退到余额里了</a></li>
+	    							<li>使用余额支付，可解决您大额支付限额问题。</li>
+	    							<li>只有返现资金可以申请提现。</li>
+	    							<li>申请充值退还的资金将原路退还到您的充值账户。</li>
+	    							<li>常用卡支付可享受便捷的支付及极速退款到账服务。</li>
+	    							充值退还到账时间由各银行受理能力决定。
+	    						</ul>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		
+	    		<!--账户余额-->
+	    		<div class="myAccount_YE">
+	    			<!--账户余额明细-->
+	    			<div class="MA_YE_detail">
+	    				<h3>账户余额</h3>
+	    				<div>
+	    					<ul class="clearfix">
+	    						<li style="border-left: none;">
+	    							<h6>余额(元)</h6>
+	    							<p><span id="YE">0.00</span></p>
+	    						</li>
+	    						<li>
+	    							<h6>现金金额(元)</h6>
+	    							<p><span id="XJYE">0.00</span><a>提现</a> </p>
+	    						</li>
+	    						<li>
+	    							<h6>返现金额(元)</h6>
+	    							<p><span id="FXJE">0.00</span></p>
+	    						</li>
+	    						<li>
+	    							<h6>冻结余额(元)</h6>
+	    							<p><span id="DJYE">0.00</span></p>
+	    						</li>
+	    					</ul>
 	    				</div>
 	    			</div>
 	    		</div>
