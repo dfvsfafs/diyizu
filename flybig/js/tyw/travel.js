@@ -64,5 +64,66 @@ $(document).ready(function(){
 		   
 			})
 	//选项卡结束
+	
+	
+//周边游的阴影开始
+			$(".zhoubian-all1").hover(function(){
+				$(".zhoubian-bla1").show();
+				$(".zhoubian-T1 a").animate({"bottom":"30px"},200)
+			},function(){
+				$(".zhoubian-bla1").hide();
+				$(".zhoubian-T1 a").animate({"bottom":"0px"},200)
+			})
+			
+			$(".zhoubian-all2").hover(function(){
+				$(".zhoubian-bla2").show();
+				$(".zhoubian-T2 a").animate({"bottom":"30px"},200)
+			},function(){
+				$(".zhoubian-bla2").hide();
+				$(".zhoubian-T2 a").animate({"bottom":"0px"},200)
+			})
+			
+			$(".zhoubian-all3").hover(function(){
+				$(".zhoubian-bla3").show();
+				$(".zhoubian-T3 a").animate({"bottom":"30px"},200)
+			},function(){
+				$(".zhoubian-bla3").hide();
+				$(".zhoubian-T3 a").animate({"bottom":"0px"},200)
+			})
+			
+			
+			$(".zhoubian-all4").hover(function(){
+				$(".zhoubian-bla4").show();
+				$(".zhoubian-T4 a").animate({"bottom":"30px"},200)
+			},function(){
+				$(".zhoubian-bla4").hide();
+				$(".zhoubian-T4 a").animate({"bottom":"0px"},200)
+			})
+			
+			
+			$(".zhoubian-all5").hover(function(){
+				$(".zhoubian-bla5").show();
+				$(".zhoubian-T5 a").animate({"bottom":"30px"},200)
+			},function(){
+				$(".zhoubian-bla5").hide();
+				$(".zhoubian-T5 a").animate({"bottom":"0px"},200)
+			})
+			
+			
+			$(".zhoubian-all6").hover(function(){
+				$(".zhoubian-bla6").show();
+				$(".zhoubian-T6 a").animate({"bottom":"30px"},200)
+			},function(){
+				$(".zhoubian-bla6").hide();
+				$(".zhoubian-T6 a").animate({"bottom":"0px"},200)
+			})
+			
+			
+
+			
+
+//周边游的阴影结束
+	
+	
 		    
 })
