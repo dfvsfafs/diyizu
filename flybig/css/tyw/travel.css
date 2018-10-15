@@ -85,15 +85,18 @@ body{
   list-style: none;
   float: left;
 }
+.main-topl-22 dl:hover,.main-topl-33 dl:hover{
+	background: #E3E3E3;
+}
 dl{
 	height: 30px;
 	margin-bottom: 0;
 	margin-left: -32px;
 	padding: 0 32px;
 }
- .main-topldl:hover{
+ /*.main-topldl:hover{
 	background:#E3E3E3;
-}
+}*/
 dt{
 	float: left;
 	color: #a5a5a5;
@@ -232,6 +235,8 @@ dd ul li a{
 	position: absolute;
 	top: 0px;
 	right: 0px;	
+	color: white;
+	font-size: 16px;
 }
 .decaration{
 	background:url(../../img/tyw/black.png) no-repeat;
@@ -273,12 +278,13 @@ dd ul li a{
 .jingnei header h3{
 	display: block;
 	float: left;
-	color: orangered;
+	color: #ffc900;
 	margin: 0;
 	margin-right: 8px;
 	height: 30px;
 	line-height: 30px;
 	font-size: 18px;
+	font-weight: bold;
 }
 .jingnei header p{
 	margin: 0;
@@ -300,6 +306,7 @@ dd ul li a{
 	margin-right: 10px;
 	padding: 0px 7px 0px 7px;
 	/*background: firebrick;*/
+	cursor: pointer;
 	
 }
 .jingnei dd a{
@@ -323,7 +330,9 @@ dd ul li a{
 	padding: 0;
 
 }
-
+.de-con span{
+	/*font-size: px;*/
+}
 .dem-con1{
 	position: relative;
 	text-align:right;
@@ -346,7 +355,8 @@ dd ul li a{
 	display: block;
 }
 .de-con span{
-	padding: 10px 10px;
+	padding: 5px 5px 0 5px;
+	font-size: 16px;
 }
 .de-con p{
 	margin: 0;
@@ -393,6 +403,52 @@ dd ul li a{
 
 /*境内游结束*/
 
+/*游轮开始*/
+.youlun-l{
+	/*height: 20px;*/
+	/*background: firebrick;*/
+	border: 1px solid lightgray;
+}
+.youlun-m{
+	/*height: 20px;*/
+	/*background: hotpink;*/
+}
+.youlun-m1{
+	/*height: 20px;*/
+	/*background: forestgreen;*/
+}
+.youlun-m2{
+	/*height: 20px;*/
+	/*background: firebrick;*/
+}
+.youlun-m12{
+	background: #FFC900;
+	height: 185px;
+}
+.youlun-m12 p:first-child{
+	text-align: center;
+	/*padding:0 12px 0px 0px;*/
+	font-size: 16px;
+	font-weight: bold;
+	background: #ffdd60;
+}
+.youlun-m12 p:nth-child(3){
+	margin-top: 80px;
+	text-align: center;
+	font-size: 14px;
+}
+.youlun-r{
+	/*height: 20px;*/
+	/*background: #FCD71E;*/
+}
+.youlun-l-img{
+	border-bottom: 1px solid lightgrey;
+}
+
+/*游轮结束*/
+
+
+
 /*旅游周边开始*/
 .arround{
 	margin-top: 10px;
@@ -400,5 +456,188 @@ dd ul li a{
 }
 .zhoubian>div{
 	/*height: 120px;*/
+}
+.zhoubian-img{
+	position: relative;
+}
+.zhoubian-T1{
+	position: absolute;
+	background: url(../../img/tyw/black.png) no-repeat;
+	height: 50px;
+	width: 192px;
+	bottom: 0;
+	text-align: center;
+}
+.zhoubian-T1 a{
+	display:block;
+	color: white;
+	font-weight: bold;
+	/*text-align: center;*/
+	padding-top: 25px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 1;
+	left: 80px;
+}
+
+.zhoubian-bla1{
+	position: absolute;
+	width: 190px;
+	height: 120px;
+	background: black;
+	opacity: 0.8;
+	top: 0px;
+	display: none;
+}
+
+
+.zhoubian-T2{
+	position: absolute;
+	background: url(../../img/tyw/black.png) no-repeat;
+	height: 50px;
+	width: 192px;
+	bottom: 0;
+	text-align: center;
+}
+.zhoubian-T2 a{
+	display:block;
+	color: white;
+	font-weight: bold;
+	/*text-align: center;*/
+	padding-top: 25px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 1;
+	left: 60px;
+}
+
+.zhoubian-bla2{
+	position: absolute;
+	width: 190px;
+	height: 120px;
+	background: black;
+	opacity: 0.8;
+	top: 0px;
+	display: none;
+}
+.zhoubian-T3{
+	position: absolute;
+	background: url(../../img/tyw/black.png) no-repeat;
+	height: 50px;
+	width: 192px;
+	bottom: 0;
+	text-align: center;
+}
+.zhoubian-T3 a{
+	display:block;
+	color: white;
+	font-weight: bold;
+	/*text-align: center;*/
+	padding-top: 25px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 1;
+	left: 40px;
+}
+
+.zhoubian-bla3{
+	position: absolute;
+	width: 190px;
+	height: 120px;
+	background: black;
+	opacity: 0.8;
+	top: 0px;
+	display: none;
+}
+
+.zhoubian-T4{
+	position: absolute;
+	background: url(../../img/tyw/black.png) no-repeat;
+	height: 50px;
+	width: 192px;
+	bottom: 0;
+	text-align: center;
+}
+.zhoubian-T4 a{
+	display:block;
+	color: white;
+	font-weight: bold;
+	/*text-align: center;*/
+	padding-top: 25px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 1;
+	left: 70px;
+}
+
+.zhoubian-bla4{
+	position: absolute;
+	width: 190px;
+	height: 120px;
+	background: black;
+	opacity: 0.8;
+	top: 0px;
+	display: none;
+}
+
+.zhoubian-T5{
+	position: absolute;
+	background: url(../../img/tyw/black.png) no-repeat;
+	height: 50px;
+	width: 192px;
+	bottom: 0;
+	text-align: center;
+}
+.zhoubian-T5 a{
+	display:block;
+	color: white;
+	font-weight: bold;
+	/*text-align: center;*/
+	padding-top: 25px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 1;
+	left: 80px;
+}
+
+.zhoubian-bla5{
+	position: absolute;
+	width: 190px;
+	height: 120px;
+	background: black;
+	opacity: 0.8;
+	top: 0px;
+	display: none;
+}
+
+
+.zhoubian-T6{
+	position: absolute;
+	background: url(../../img/tyw/black.png) no-repeat;
+	height: 50px;
+	width: 192px;
+	bottom: 0;
+	text-align: center;
+}
+.zhoubian-T6 a{
+	display:block;
+	color: white;
+	font-weight: bold;
+	/*text-align: center;*/
+	padding-top: 25px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 1;
+	left: 60px;
+}
+
+.zhoubian-bla6{
+	position: absolute;
+	width: 190px;
+	height: 120px;
+	background: black;
+	opacity: 0.8;
+	top: 0px;
+	display: none;
 }
 /*旅游周边结束*/
