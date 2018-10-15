@@ -2,9 +2,17 @@ $(document).ready(function(){
 	$(".main-topl-1").hover(function(){
 		$(".list").show();
 	},function(){
-		$(".list").hide();
 	})
 		
+		$(document).mouseover(function(){
+			$(".list").hide();
+		})
+		$(".main-topl-1").mouseover(function(event){
+			event.stopPropagation();
+		})
+		$(".list").mouseover(function(event){
+			event.stopPropagation();
+		})
 //	选项卡开始
 			$(".guonei-conr nav ul li").click(function(){
 			var	a = $(this).index();
