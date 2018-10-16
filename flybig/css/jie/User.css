@@ -51,11 +51,13 @@ a {
 	margin-left: 30px;
 	margin-top: 20px;
 }
-	.myAccount_main h5 {
+	.myAccount_main h5,
+	.Account_safe h5 {
 			font-weight: bold;
 			font-size: 15px;
 		}
-		.myAccount_main h5 span {
+		.myAccount_main h5 span,
+		.Account_safe h5 span {
 			display: inline-block;
 			width: 2px;
 			height: 15px;
@@ -418,9 +420,17 @@ a {
 	margin-top: 20px;
 }
 	.peronal_info {
+		position: relative;
 		border: solid 1px #eff2f4;
 		border-top: solid 1.5px #b0d9ff;
 		padding: 10px;
+	}
+	.PI_info {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 15px;
+		color: #0069ca;
 	}
 		.personal_TX {
 			position: relative;
@@ -439,6 +449,36 @@ a {
 		.personal_TX+div {
 			padding-left: 20px;
 		}
-		.personal_TX+div>p>span:first-child {
+		.personal_TX+div>div {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.personal_TX+div>div>span:first-child {
+			display: inline-block;
+			width: 80px;
+			padding-left: 25px;
+			color: grey;
+		}
+		.personal_TX+div>div>span:nth-child(2) {
 			padding-left: 15px;
 		}
+		.mA_AQDJ {
+			display: inline-block;
+			width: 100px;
+			height: 10px;
+			margin: 0;
+			margin-left: 15px;
+		}
+		.mA_AQDJ div {
+			display: inline-block;
+			background-color: sandybrown;
+		}
+		.mA_AQDJ+a {
+			padding-left: 15px;
+			color: #0069ca;
+		}
+/*安全设置*/
+.Account_safe {
+	
+}
+
