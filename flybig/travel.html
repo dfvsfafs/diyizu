@@ -7,18 +7,21 @@
 		<link rel="stylesheet" type="text/css" href="css/tyw/travel.css"/>
 		<link rel="stylesheet" type="text/css" href="css/fzm/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/tyw/jingdian.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tyw/tyle.css"/>
 		<script type="text/javascript" src="js/tyw/jquery-3.3.1.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 		<script type="text/javascript" src="js/tyw/travel.js" ></script>
 		<script src="js/fzm/index.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript" src="js/tyw/jquery-1.9.1.min.js" ></script>-->
+		<script type="text/javascript" src="js/tyw/cityTemplate.js" ></script>
 				
 	</head>
-	<body >
+	<body style="background: white !important;">
      <!--头部开始-->
-     <div class="" style="background-color: #f2f2f2 !important;">
+     <div class="" style="">
      	<!--顶部导航条-->
-		<div class="top_nava">
-			<div class="clearfix top_nav">
+		<div class="top_nava" style="background-color: #f2f2f2 !important;">
+			<div class="clearfix top_nav" style="background-color: #f2f2f2 !important;">
 				<!--左边导航-->
 				<div class="pull-left top_nav_left">
 					<ul class="clearfix">
@@ -268,26 +271,76 @@
 			<div class="header_centent">
 				<div class="row" style="margin: 0px;">
 					<!--logo图片-->
-					<div class="header_logo col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div class="header_logo col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<a href="#">
 							<img src="img/fzm/top_d.png"/>
 						</a>
 					</div>
 					<!--搜索框-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative;">
-						<div class="header_search_btn clearfix">
-							<button class="search_switch_selected">宝贝</button>
-							<button class="">店铺</button>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7" style="position: relative;">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 address">
+								<div class="pull-right">
+									<div class="sousuo clearfix pull-left" style="background: #FFF7D4 !important;border: 2px solid #ffc900;width: 120px;border-radius: 4px;">
+										<!--<input type="text" name="" id="place" value="广州"/  class="pull-left">-->
+									    <input type="text" value="广州" id="place" name="" class="pull-left">
+									    <span class="pull-left">出发</span>
+									    <span class="pull-right xiala"></span>
+										<!-- 城市 -->
+										<div id="in_city" style="display: none;"></div>
+										<script type="text/javascript">
+
+											    var cityA = $(".city_a_le1 a"); //城市
+											    var pla = $("#place");  //出发地
+											    var dest = $("#destination");  //目的地
+											    // 默认值
+											    inCity.width = "345";  //城市选择框  宽
+											    inCity.height = "auto";  //城市选择框  高
+											    inCity.id = "#in_city";  //城市选择框  父级ID
+											    inCity.Children = '.city_a_le1';  //城市名box
+											    // 初始化 城市HTML模板
+											    $(inCity.id).prepend(inCity._template.join(''));
+											    inCity.Hot(cityA);
+											    
+											    //城市 导航
+											    var apay = $(".screen a");
+										
+											    var placeThis; //当前选择标签
+											    apay.click(function(obj){  //城市导航
+											        inCity.payment($(this));
+											    })
+										
+											    inCity.place(pla); //出发地
+											    inCity.destination(dest);  //目的地
+											    inCity.cityClick(cityA); //显示赋值城市
+										</script>
+
+									</div>
+									  
+									   <img src="img/tyw/jiantou.png" /class="pull-right"style="padding-top: 10px;">
+
+								</div>
+									
+							</div>
+
+							<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="padding-left: 0;">
+								<div class="header_search_btn clearfix">
+									<button class="search_switch_selected">宝贝</button>
+									<button class="">店铺</button>
+								</div>
+								<div class="input-group header_search_inp">
+				                    <input type="text" class="form-control" placeholder="目的地/酒店/景点/签证等" style="margin: 0;">
+				                    <span class="input-group-btn">
+				                        <button class="btn btn-default" type="button">
+				                        	<span class="glyphicon glyphicon-search"></span>
+				                        	搜索
+				                        </button>
+				                    </span>
+				                </div>
+							</div>
 						</div>
-						<div class="input-group header_search_inp">
-		                    <input type="text" class="form-control" placeholder="目的地/酒店/景点/签证等">
-		                    <span class="input-group-btn">
-		                        <button class="btn btn-default" type="button">
-		                        	<span class="glyphicon glyphicon-search"></span>
-		                        	搜索
-		                        </button>
-		                    </span>
-		                </div>
+						
+						
 		                <!--隐藏部分-->
 		                <div class="hearder_search_recommend">
 		                	<div>
@@ -368,11 +421,11 @@
      	
      	
      </div>
-     <div class="content" style="background-color: white !important;">
+     <div class="content">
 
       <!--头部结束-->
       <!--主要内容开始-->
-      <div class="main" style="background: white;">
+      <div class="main">
 
 	      <!--中间内容的上部分开始-->
 	      <div class="main-top">
@@ -575,7 +628,7 @@
 	      		<!--第三块-->
 	      		<div class="main-topl-3">
 	      			<div class="main-topl-33">
-	      				<h4><span>出镜游</span></h4>
+	      				<h4><span >出镜游</span></h4>
 	      				<dl class="clearfix">
 	      					<dt>云南:</dt>
 	      					<dd>
@@ -666,33 +719,39 @@
 	      	<!--右边开始-->
 	      	<div class="main-topr clearfix">
 	      		<!--右边第一块开始-->
-	      		<div class="main-topr1">
+	      		<div class="main-topr1" class="pull-left">
 		      		<div class="main-topr1l clearfix">
-		      			<!--图片轮播-->
-					<div class="banner_page_center" id="banner_center">
-						<!--<span class="btn-l"></span>-->
-						<!--<span class="btn-r"></span>-->
-						<ul class="page_img">
-							<li>
-								<a href=""><img src="img/tyw/lunbo1.jpg"/></a>
-							</li>
-							<li>
-								<a href=""><img src="img/tyw/lunbo2.jpg"/></a>
-							</li>
-							<li>
-								<a href=""><img src="img/tyw/lunbo3.jpg"/></a>
-							</li>
-						</ul>
-						<ul class="page_con">
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<!--图片轮播结束-->
-					<!--<div class=""style="clear: both;">
+		      			<!--轮播开始-->
+					<div class="" style="width:700px;">
+						<div id="myCarousel" class="carousel slide">
+							    <!-- 轮播（Carousel）项目 -->
+							    <div class="carousel-inner">
+							        <div class="item active">
+							            <img src="img/tyw/lunbo1.jpg" alt="First slide">
+							        </div>
+							        <div class="item">
+							            <img src="img/tyw/lunbo2.jpg" alt="Second slide">
+							        </div>
+							        <div class="item">
+							            <img src="img/tyw/lunbo3.jpg" alt="Third slide">
+							        </div>
+			
+							    </div>
+							     <!-- 轮播（Carousel）导航 -->
+							        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							            <span class="sr-only">Previous</span>
+							        </a>
+							        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							            <span class="sr-only">Next</span>
+							        </a>
+			            	</div>
+						</div>
+			<!--轮播结束-->
+			      <!--<div class=""style="clear: both;"></div>-->
 						
-					</div>-->
+					
 					<!--保障栏-->
 					<div class="baozhang clearfix">
 						<div class="pull-left">
