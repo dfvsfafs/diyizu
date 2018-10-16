@@ -4,7 +4,16 @@ a {
 	color: black;
 }
 .div_hidden {
-	display: none;
+	display: none !important;
+}
+.class_h {
+	color: #4CAE4C;
+}
+.class_m {
+	color: #EE7500;
+}
+.class_s {
+	color: #FF0000;
 }
 /*div框的hover边框*/
 .divBuleBorder:hover {
@@ -34,14 +43,17 @@ a {
 	padding-right: 40px;
 }
 /*我的账户导航*/
-.myAccount_nav {
+.myAccount_nav,
+.User_help_nav {
 	width: 100px;
 	margin-top: 30px;
 }
-.myAccount_nav li {
+.myAccount_nav li,
+.User_help_nav li {
 	font-size: 14px;
 }
-.myAccount_nav li.active a{
+.myAccount_nav li.active a,
+.User_help_nav li.active a{
 	background-color: #2cabc4 !important;
 }
 
@@ -52,12 +64,14 @@ a {
 	margin-top: 20px;
 }
 	.myAccount_main h5,
-	.Account_safe h5 {
+	.Account_safe h5,
+	.Account_histroy h5 {
 			font-weight: bold;
 			font-size: 15px;
 		}
 		.myAccount_main h5 span,
-		.Account_safe h5 span {
+		.Account_safe h5 span,
+		.Account_histroy h5 span {
 			display: inline-block;
 			width: 2px;
 			height: 15px;
@@ -429,7 +443,7 @@ a {
 		position: absolute;
 		top: 10px;
 		right: 20px;
-		font-size: 15px;
+		font-size: 14px;
 		color: #0069ca;
 	}
 		.personal_TX {
@@ -478,7 +492,58 @@ a {
 			color: #0069ca;
 		}
 /*安全设置*/
-.Account_safe {
-	
+.Account_safe,
+.Account_histroy {
+	margin-top: 20px;
+	border: solid 1px gainsboro;
+	padding: 5px 10px;
 }
-
+.Account_safe table,
+.Account_histroy table {
+	font-size: 12px;
+}
+.Account_safe table tr td,
+.Account_histroy table tr td {
+	border: none !important;
+}
+.Account_histroy font {
+	padding-left: 15px;
+	color: #C0C0C0;
+	font-size: 12px;
+	font-weight: 400;
+}
+.Account_histroy font a {
+	color: #0069ca;
+}
+.Account_histroy table thead {
+	color: #C0C0C0;
+}
+/*帮助*/
+.User_help_content {
+	width: 1060px;
+	margin-top: 30px;
+}
+.User_help_content li {
+	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-left: 10px;
+	border-radius: 4px;
+}
+.User_help_content h6 {
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 20px;
+	background: url(../../img/jie/help-icon.png) no-repeat 10px 4px;
+}
+.User_help_content p {
+	padding-left: 60px;
+	margin: 15px 0;
+	font-size: 12px;
+	color: gray;
+}
+.User_help_content li:hover {
+	background: #f5fbfe;
+}
+.User_help_content li:hover p {
+	color: black;
+}

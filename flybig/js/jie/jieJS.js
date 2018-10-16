@@ -153,13 +153,19 @@ $(document).ready(function(){
 	})
 	
 //	用户管理界面
+//	一级选项卡
 	$(".User_nav li").click(function(){
 		var $lis = $(".User_nav li");
+		var $divs = $(".User_main>div"); 
+		var $index = $(this).index();
 		for (var i=0;i<$lis.length;i++){
 			$lis.eq(i).removeClass("active");
+			$divs.eq(i).addClass("div_hidden");
 		}
 		$(this).addClass("active");
+		$divs.eq($index).removeClass("div_hidden");
 	})
+//	我的账户,二级选项卡
 	$(".myAccount_nav li").click(function(){
 		var $lis = $(".myAccount_nav li");
 		var $divs = $(".myAccount_main>div");
@@ -171,7 +177,7 @@ $(document).ready(function(){
 		$(this).addClass("active");
 		$divs.eq($index).removeClass("div_hidden");
 	})
-	
+//	我的订单/二级选项卡
 	$(".myIndent_nav li").click(function(){
 		var $lis = $(".myIndent_nav li");
 		for (var i=0;i<$lis.length;i++){
@@ -186,5 +192,18 @@ $(document).ready(function(){
 			$lis.eq(i).removeClass("I_active");
 		}
 		$(this).addClass("I_active");
+	})
+	
+//	帮助
+	$(".User_help_nav li").click(function(){
+		var $lis = $(".User_help_nav li");
+		var $divs = $(".User_help_content>div");
+		var $index = $(this).index();
+		for (var i=0;i<$lis.length;i++){
+			$lis.eq(i).removeClass("active");
+			$divs.eq(i).addClass("div_hidden");
+		}
+		$(this).addClass("active");
+		$divs.eq($index).removeClass("div_hidden");
 	})
 })

@@ -194,6 +194,7 @@ body{
 /*底部开始*/
 .footer{
 	width: 100% !important;
+	margin-top: 40px;
 }
 .footer_con{
 	width: 1200px !important;
