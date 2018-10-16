@@ -119,6 +119,21 @@ $(document).ready(function(){
 			})
 			
 			
+			
+			$(document).click(function(){
+				$("#in_city").hide();
+			})
+			$("#place").click(function(event){
+				event.stopPropagation();
+			})
+			$("#in_city").click(function(event){
+				event.stopPropagation();
+			})
+			$("#place").click(function(){
+				$("#in_city").css("top","35px");
+				$("#in_city").css("left","40px");
+				$("#in_city").show();
+			})
 
 			
 
