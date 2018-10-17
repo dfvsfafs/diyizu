@@ -988,4 +988,10 @@ $(document).ready(function(){
 		$(this).parent().next().hide();
 	})
 	
+	
+	
+//	管理员登录
+	$("#Login_img").click(function(){
+		window.location.href=
+	})
 })
