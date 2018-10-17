@@ -59,19 +59,17 @@ $(document).ready(function(){
 	
 	$("#choose_area input").focus(function(){
 		$(".area").show();
-	}).blur(function(){
-//		alert($("#choose_area input").is(':focus'))
-		var $statue = setTimeout(
-			function(){
-				if($("#choose_area input").is(':focus') == false){
-					$(".area").hide();
-				}
-						clearTimeout(this.$statue);
-			},
-			100
-		)
-//		$(".area").hide(1000);
 	})
+	
+	$(document).click(function(){ 
+	    	$(".area").hide(); 
+   		 }) 
+	$("#choose_area").click(function(event){
+		event.stopPropagation();
+	});
+	
+	
+	
 	
 //	注册界面的输入判断
 //手机号码的判断
