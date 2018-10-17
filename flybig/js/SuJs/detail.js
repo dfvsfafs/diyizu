@@ -93,11 +93,11 @@ $(function(){
     
     $(".comment_img_small").click(function(){
     	$(this).css("border-color","#f23d6a");
-    	$(".comment_img_big").toggle(200);
+    	$(this).siblings(".comment_img_big").toggle(200);
     })
     $(".comment_img_big").click(function(){
     	$(this).toggle();
-    	$(".comment_img_small").css("border-color","#f2f2f2")
+    	$(this).siblings(".comment_img_small").css("border-color","#f2f2f2")
     })
     //评论切换
     $(".comm_hot").click(function(){
@@ -174,8 +174,6 @@ $(function(){
 	})
 	
 	
-//	$(".comment_top>ul>li a").click(function(){
-//		
-//		$(this).children("i").toggle();
-//	})
+	
+	
 })
