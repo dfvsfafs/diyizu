@@ -43,6 +43,7 @@ $(document).ready(function(){
 		var $lis = $(".area_nav li");
 		var $divs = $(".area_list>ul");
 		var $index = $(this).index();
+		$("#choose_area input").focus();
 		for (var i=0;i<$lis.length;i++){
 			$lis.eq(i).removeClass("area_nav_active");
 			$divs.eq(i).addClass("div_hidden");
@@ -50,6 +51,28 @@ $(document).ready(function(){
 		$(this).addClass("area_nav_active");
 		$divs.eq($index).removeClass("div_hidden");
 	})
+	
+	$(".area_list li").click(function(){
+		var $temp = $(this).text();
+		$("#choose_area input").val($temp);
+	})
+	
+	$("#choose_area input").focus(function(){
+		$(".area").show();
+	}).blur(function(){
+//		alert($("#choose_area input").is(':focus'))
+		var $statue = setTimeout(
+			function(){
+				if($("#choose_area input").is(':focus') == false){
+					$(".area").hide();
+				}
+						clearTimeout(this.$statue);
+			},
+			100
+		)
+//		$(".area").hide(1000);
+	})
+	
 //	注册界面的输入判断
 //手机号码的判断
 	$("input[name='tel']").blur(function(){

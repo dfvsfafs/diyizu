@@ -44,9 +44,9 @@
 					<form>
 						<!--使用手机号码注册-->
 						<div id="phone_reg">
-							<div class="form-group" style="position: relative;">
+							<div id="choose_area" class="form-group" style="position: relative;">
 								<label>国家/地区</label>
-								<div class="input_container"><input id="choose_area" type="text" class="form-control"/></div>
+								<div class="input_container"><input  type="text" class="form-control" value="中国 86"/></div>
 								<!--选择地区-->
 								<div class="area">
 									<div class="area_nav">
@@ -66,7 +66,6 @@
 											<li>M</li>
 											<li>N</li>
 											<li>P</li>
-											<li>Q</li>
 											<li>R</li>
 											<li>S</li>
 											<li>T</li>
@@ -126,7 +125,7 @@
 											<li>阿鲁巴 297</li>
 										</ul>
 										<!--B-->
-										<ul>
+										<ul class="div_hidden">
 											<li>不丹 975</li>
 											<li>伯利兹 501</li>
 											<li>保加利亚 359</li>
@@ -137,7 +136,7 @@
 											<li>巴哈马 1</li>
 											<li>巴基斯坦 92</li>
 											<li>巴巴多斯 1</li>
-											<li>巴布亚新几内亚 675</li>
+											<li>巴布亚新… 675</li>
 											<li>巴拉圭 595</li>
 											<li>巴拿马 507</li>
 											<li>巴林 973</li>
@@ -154,12 +153,12 @@
 											<li>贝宁 229</li>
 										</ul>
 										<!--C-->
-										<ul>
+										<ul class="div_hidden">
 											<li>朝鲜 850</li>
 											<li>赤道几内亚 240</li>
 										</ul>
 										<!--D-->
-										<ul>
+										<ul class="div_hidden">
 											<li>东帝汶 670</li>
 											<li>丹麦 45</li>
 											<li>多哥 228</li>
@@ -168,13 +167,13 @@
 											<li>德国 49</li>
 										</ul>
 										<!--E-->
-										<ul>
+										<ul class="div_hidden">
 											<li>俄罗斯 7</li>
 											<li>厄瓜多尔 593</li>
 											<li>厄立特里亚 291</li>
 										</ul>
 										<!--F-->
-										<ul>
+										<ul class="div_hidden">
 											<li>芬兰 358</li>
 											<li>佛得角 238</li>
 											<li>斐济 679</li>
@@ -187,7 +186,7 @@
 											<li>菲律宾 63</li>
 										</ul>
 										<!--G-->
-										<ul>
+										<ul class="div_hidden">
 											<li>关岛 1</li>
 											<li>冈比亚 220</li>
 											<li>刚果（布）242</li>
@@ -203,7 +202,7 @@
 											<li>瓜德罗普岛 590</li>
 										</ul>
 										<!--H-->
-										<ul>
+										<ul class="div_hidden">
 											<li>哈萨克斯坦 7</li>
 											<li>洪都拉斯 504</li>
 											<li>海底 509</li>
@@ -214,7 +213,7 @@
 											<li>黑山共和国 382</li>
 										</ul>
 										<!--J-->
-										<ul>
+										<ul class="div_hidden">
 											<li>几内亚 224</li>
 											<li>几内亚比绍 245</li>
 											<li>加拿大 1</li>
@@ -228,7 +227,7 @@
 											<li></li>
 										</ul>
 										<!--K-->
-										<ul>
+										<ul class="div_hidden">
 											<li>克罗地亚 385</li>
 											<li>卡塔尔 974</li>
 											<li>喀麦隆 237</li>
@@ -242,7 +241,7 @@
 											<li>肯尼亚 254</li>
 										</ul>
 										<!--L-->
-										<ul>
+										<ul class="div_hidden">
 											<li>列支敦士登 423</li>
 											<li>利比亚 218</li>
 											<li>利比里亚 231</li>
@@ -257,7 +256,7 @@
 											<li>巴黎嫩 961</li>
 										</ul>
 										<!--L-->
-										<ul>
+										<ul class="div_hidden">
 											<li>美国 1</li>
 											<li>摩洛哥 212</li>
 											<li>马达加斯加 261</li>
@@ -287,7 +286,7 @@
 											<li>马里 223</li>
 										</ul>
 										<!--N-->
-										<ul>
+										<ul class="div_hidden">
 											<li>挪威 47</li>
 											<li>南苏丹 211</li>
 											<li>南非 27</li>
@@ -301,18 +300,18 @@
 											<li>诺福克岛 672</li>
 										</ul>
 										<!--P-->
-										<ul>
+										<ul class="div_hidden">
 											<li>帕劳 680</li>
 											<li>葡萄牙 351</li>
 										</ul>
 										<!--R-->
-										<ul>
+										<ul class="div_hidden">
 											<li>日本 81</li>
 											<li>瑞士 41</li>
 											<li>瑞典 46</li>
 										</ul>
 										<!--S-->
-										<ul>
+										<ul class="div_hidden">
 											<li>圣巴泰勒米 590</li>
 											<li>圣卢西亚 1</li>
 											<li>圣基茨和尼 1</li>
@@ -341,7 +340,7 @@
 											<li>萨摩亚 685</li>
 										</ul>
 										<!--T-->
-										<ul>
+										<ul class="div_hidden">
 											<li>中国台湾 886</li>
 											<li>图瓦卢 688</li>
 											<li>土克曼斯坦 993</li>
@@ -352,9 +351,59 @@
 											<li>汤加 676</li>
 											<li>泰国 66</li>
 											<li>特克斯和凯 1</li>
-											<li>特立尼达和多巴哥 1</li>
+											<li>特立尼达和… 1</li>
 											<li>特里斯坦-达 290</li>
 											<li>突尼斯 216</li>
+										</ul>
+										<!--W-->
+										<ul class="div_hidden">
+											<li>乌克兰 380</li>
+											<li>乌兹别克斯坦 998</li>
+											<li>乌干达 256</li>
+											<li>乌拉圭 598</li>
+											<li>危地马拉 502</li>
+											<li>文莱 673</li>
+											<li>委内瑞拉 58</li>
+											<li>瓦利斯和富 681</li>
+											<li>瓦努阿图 678</li>
+										</ul>
+										<ul class="div_hidden">
+											<li>匈牙利 36</li>
+											<li>叙利亚 963</li>
+											<li>希腊 30</li>
+											<li>新加坡 65</li>
+											<li>新喀里多尼亚 687</li>
+											<li>新西兰 64</li>
+											<li>西撒哈拉 212</li>
+											<li>西班牙 34</li>
+											<li>中国香港 852</li>
+										</ul>
+										<!--Y-->
+										<ul class="div_hidden">
+											<li>英国 44</li>
+											<li>也门 967</li>
+											<li>亚美尼亚 374</li>
+											<li>以色列 972</li>
+											<li>伊拉克 964</li>
+											<li>伊朗 98</li>
+											<li>印度 91</li>
+											<li>印度尼西亚 62</li>
+											<li>意大利 39</li>
+											<li>牙买加 1</li>
+											<li>约旦 962</li>
+											<li>英属印度洋 246</li>
+											<li>英属维京群岛 1</li>
+											<li>越南 84</li>
+										</ul>
+										<!--Z-->
+										<ul class="div_hidden">
+											<li>中国 86</li>
+											<li>中非共和国 236</li>
+											<li>乍得 235</li>
+											<li>智利 56</li>
+											<li>泽西岛 44</li>
+											<li>直布罗陀 350</li>
+											<li>赞比亚 260</li>
 										</ul>
 									</div>
 								</div>

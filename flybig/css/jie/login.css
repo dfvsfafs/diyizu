@@ -219,7 +219,8 @@ header span {
 	position: absolute;
 	top: 33px;
 	left: 153px;
-	width: 440px;
+	display: none;
+	width: 425px;
 	box-sizing: border-box;
 	background-color: white;
 	border: solid 1px gainsboro;
