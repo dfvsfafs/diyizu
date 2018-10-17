@@ -987,11 +987,4 @@ $(document).ready(function(){
 	$(".header_search_inp input").blur(function(){
 		$(this).parent().next().hide();
 	})
-	
-	
-	
-//	管理员登录
-	$("#Login_img").click(function(){
-		window.location.href=
-	})
 })
