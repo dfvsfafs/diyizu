@@ -987,4 +987,12 @@ $(document).ready(function(){
 	$(".header_search_inp input").blur(function(){
 		$(this).parent().next().hide();
 	})
+	$(".oo").click(function(){
+		$(this).css({"background":"goldenrod","color":"white","border":"none"});
+		$(".pp").css({"background":"rgb(229,213,63)","color":"white","border":"none"});
+	})
+	$(".pp").click(function(){
+		$(this).css({"background":"goldenrod","color":"white","border":"none"});
+		$(".oo").css({"background":"rgb(229,213,63)","color":"white","border":"none"});
+	})
 })
