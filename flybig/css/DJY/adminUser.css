@@ -160,12 +160,14 @@
 }
 .ppage2left{
 	float: left;
-	width: 300px;
+	width: 350px;
 	
 }
 .ppage2right{
 	float: left;
-	width: 700px;
+	width: 640px;
+	background: white;
+	margin-left: 10px;
 }
 .ppage2lefttop{
 	background: white;
@@ -177,4 +179,74 @@
 }
 .ppage2leftbottom{
 	background: white;
+}
+.ppage2leftinputgroup{
+	margin-left: 30px;
+	color: gray;
+	
+}
+.ppage2leftinputgroup input{
+	width: 220px;
+}
+.buttongroups{
+	margin-left: 120px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.buttongroups button{
+	float: left;
+	background: rgb(229,213,63);
+	color: white;
+	border: none;
+	
+}
+.ppage2left button:nth-child(2){
+	margin-left: 30px;
+}
+.buttongroups button:hover{
+	background: goldenrod;
+	color: white;
+}
+.ppage2leftbottom{
+	background: white;
+	margin-top: 10px;
+}
+.infoselect span{
+	float: left;
+}
+.infoselect input{
+	float: left;
+}
+.alerrt{
+	background: rgb(229,213,63);
+	width: 610px;
+	margin-left: 15px;
+	margin-top: 35px;
+}
+.alerrt p b{
+	color: white;
+	margin-left: 15px;
+	
+}
+.alerrt p{
+	padding-top: 8px;
+}
+.userinfoleft{
+	float: left;
+}
+.userinforight{
+	float: left;
+}
+.userinfoleft{
+	border-radius: 50%;
+	border: 1px solid gainsboro;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.userinfoleft img{
+	width: 70px;
+	border-radius: 50%;
+}
+.kkk{
+	margin-left: 20px;
 }

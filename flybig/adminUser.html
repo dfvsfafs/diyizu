@@ -18,14 +18,14 @@
 				
 			</div>
 			<div class="clearfix toptxt">
-				<span><b>飞狗</b></span>
-				<span>Flying Go</span>
+				<span><b>飞猪</b></span>
+				<span>Flying Pig</span>
 			</div>
 			<div class="clearfix topright">
 				<ul>
 					<li><span class="glyphicon glyphicon-user"></span></li>
 					<li>您好,admin</li>
-					<li><a>退出</a></li>
+					<li><a style="cursor: pointer;">退出</a></li>
 				</ul>
 			</div>
 			
@@ -40,20 +40,20 @@
 						<span class="glyphicon glyphicon-th-list"></span>
 						<span>目录</span>
 					</li>
-					<li>
+					<li class="kkk">
 						<span class="glyphicon glyphicon-list-alt"></span>
 						<span>订单管理</span>
 					</li>
-					<li>
+					<li class="kkk">
 						<span class="glyphicon glyphicon-user"></span>
 						<span>用户管理</span>
 					</li>
 					
-					<li>
+					<li class="kkk">
 						<span class="glyphicon glyphicon-tag"></span>
 						<span>管理员信息</span>
 					</li>
-					<li>
+					<li class="kkk">
 						<span class="glyphicon glyphicon-file"></span>
 						<span>其他</span>
 					</li>
@@ -265,15 +265,186 @@
 							</div>
 							<div class="clearfix ppage2leftinputgroup">
 								<span>消息标题:</span>
-								in
+								<input type="text" name="" id="" value="" placeholder="消息标题" required="required"/>
+							</div>
+							<div class="clearfix ppage2leftinputgroup">
+								<span style="margin-top: -10px;">消息正文:</span>
+								<textarea rows="5" cols="20" required="required" style="width: 220px;margin-top: 15px;vertical-align: middle;">正文内容75以内</textarea>
+							</div>
+							<div class="clearfix buttongroups">
+								<button class="btn oo">确定</button>
+								<button class="btn pp">取消</button>
 							</div>
 						</div>
 						<div class="clearfix ppage2leftbottom">
-							
+							<div class="clearfix ppage2lefttoptitle">
+								<p><b>用户记录</b></p>
+							</div>
+							<div class="clearfix ppage2leftinputgroup">
+								<span>已有积分:</span>
+								<input type="text" name="" id="" value="" placeholder="消息标题" required="required"/>
+							</div>
+							<div class="clearfix ppage2leftinputgroup" style="margin-top: 15px;">
+								<span style="margin-top: -10px;">诚信评价:</span>
+								<select class="clearfix">
+									<option value="极佳">极佳</option>
+									<option value="良好">良好</option>
+									<option value="一般">一般</option>
+									<option value="较差">较差</option>
+									<option value="极差">极差</option>
+								</select>
+							</div>
+							<div class="clearfix ppage2leftinputgroup">
+								<span>关联账号:</span>
+								<input type="text" name="" id="" value="" placeholder="账号" required="required" style="margin-top: 15px;"/>
+							</div>
+							<div class="clearfix ppage2leftinputgroup">
+								<span>绑定手机:</span>
+								<input type="text" name="" id="" value="" placeholder="手机号" required="required" style="margin-top: 15px; margin-bottom: 6px;"/>
+							</div>
+							<div class="clearfix buttongroups">
+								<button class="btn oo">确定</button>
+								<button class="btn pp">取消</button>
+							</div>
 						</div>
 					</div>
 					<div class="clearfix ppage2right">
-						
+						<div class="clearfix ppage2lefttoptitle">
+								<p><b>用户信息查询</b></p>
+						</div>
+						<div class="clearfix infoselect" style="margin-left: 30px;color: gray;margin-top: 10px;">
+							<span>昵称:</span>
+							<input type="text" name="" id="" value="" placeholder="请输入用户昵称" required="required" style="margin-top: -2px; margin-bottom: 6px;margin-left: 15px;width: 300px;"/>
+							<div class="clearfix buttongroups" style="float: left;margin-top: -5px;margin-left: 30px;">
+								<button class="btn oo">确定</button>
+								<button class="btn pp" style="margin-left: 20px;">取消</button>
+							</div>
+						</div>
+						<div class="clearfix alerrt">
+							<p><b>用户信息</b></p>
+						</div>
+						<div class="clearfix userinfo">
+							<div class="clearfix userinfoleft">
+								<img src="img/DJY/head2.jpg"/>
+							</div>
+							<div class="clearfix userinforight">
+								<div class="clearfix ppage1table" style="width: 300px;margin-left: 30px;margin-bottom: 10px;margin-top: 16px;">
+									<table class="table table-striped" style="width: 500px;cursor: pointer;">
+											<thead>
+												<!--<tr>
+													<th></th>
+													<th>订单号</th>
+													<th>下单时间</th>
+													<th>数量</th>
+													<th>状态</th>
+													<th>操作</th>
+												</tr>-->
+											</thead>
+											<tbody>
+												<tr>
+													<th></th>
+													<th>昵称</th>
+													<th>订单时间</th>
+													<th>操作</th>
+												</tr>
+												
+												
+												<tr>
+													<td><input type="checkbox" name="" id="" value="" /></td>
+													<td>江明</td>
+													<td>2018-10-16 09:00</td>
+													<td class="t1">
+														<div class="clearfix op1">
+															<span class="glyphicon glyphicon-edit"></span>
+															<span>编辑</span>
+														</div>
+														<div class="clearfix op2">
+															<span class="glyphicon glyphicon-trash"></span>
+															<span>删除</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" name="" id="" value="" /></td>
+													<td>杜燕</td>
+													<td>2018-10-16 20:00</td>
+													<td class="t1">
+														<div class="clearfix op1">
+															<span class="glyphicon glyphicon-edit"></span>
+															<span>编辑</span>
+														</div>
+														<div class="clearfix op2">
+															<span class="glyphicon glyphicon-trash"></span>
+															<span>删除</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" name="" id="" value="" /></td>
+													<td>张三</td>
+													<td>2018-10-17 8:00</td>
+													<td class="t1">
+														<div class="clearfix op1">
+															<span class="glyphicon glyphicon-edit"></span>
+															<span>编辑</span>
+														</div>
+														<div class="clearfix op2">
+															<span class="glyphicon glyphicon-trash"></span>
+															<span>删除</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" name="" id="" value="" /></td>
+													<td>李四</td>
+													<td>2018-10-17 12:00</td>
+													<td class="t1">
+														<div class="clearfix op1">
+															<span class="glyphicon glyphicon-edit"></span>
+															<span>编辑</span>
+														</div>
+														<div class="clearfix op2">
+															<span class="glyphicon glyphicon-trash"></span>
+															<span>删除</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" name="" id="" value="" /></td>
+													<td>杨伟</td>
+													<td>2018-10-17 19:00</td>
+													<td class="t1">
+														<div class="clearfix op1">
+															<span class="glyphicon glyphicon-edit"></span>
+															<span>编辑</span>
+														</div>
+														<div class="clearfix op2">
+															<span class="glyphicon glyphicon-trash"></span>
+															<span>删除</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" name="" id="" value="" /></td>
+													<td>陈丽</td>
+													<td>2018-10-17 22:00</td>
+													<td class="t1">
+														<div class="clearfix op1">
+															<span class="glyphicon glyphicon-edit"></span>
+															<span>编辑</span>
+														</div>
+														<div class="clearfix op2">
+															<span class="glyphicon glyphicon-trash"></span>
+															<span>删除</span>
+														</div>
+													</td>
+												</tr>
+											
+											</tbody>
+										</table>
+					</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
