@@ -214,3 +214,49 @@ header span {
 .reg_tip span {
 	color: red;
 }
+/*地区选择*/
+.area {
+	position: absolute;
+	top: 33px;
+	left: 153px;
+	width: 440px;
+	box-sizing: border-box;
+	background-color: white;
+	border: solid 1px gainsboro;
+}
+.area_nav{
+	border-bottom: solid 1px gainsboro;
+}
+.area_nav_active {
+	border-bottom: solid 1px #0084BB;
+}
+.area_nav ul,
+.area_list ul {
+	padding: 0;
+	box-sizing: border-box;
+	margin-left: 10px;
+	margin-bottom: 0;
+	list-style: none;
+}
+.area_nav li {
+	display: inline-block;
+	font-size: 12px;
+	padding: 0 2px;
+	cursor: pointer;
+}
+.area_list {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.area_list li{
+	display: inline-block;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.area_list li:hover {
+	font-weight: bold;
+	color: #0084BB;
+}
+

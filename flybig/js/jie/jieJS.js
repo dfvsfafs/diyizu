@@ -37,6 +37,19 @@ $(document).ready(function(){
 		$("#email_reg").addClass("div_hidden");
 	})
 	
+	
+//	地区选择
+	$(".area_nav li").click(function(){
+		var $lis = $(".area_nav li");
+		var $divs = $(".area_list>ul");
+		var $index = $(this).index();
+		for (var i=0;i<$lis.length;i++){
+			$lis.eq(i).removeClass("area_nav_active");
+			$divs.eq(i).addClass("div_hidden");
+		}
+		$(this).addClass("area_nav_active");
+		$divs.eq($index).removeClass("div_hidden");
+	})
 //	注册界面的输入判断
 //手机号码的判断
 	$("input[name='tel']").blur(function(){
