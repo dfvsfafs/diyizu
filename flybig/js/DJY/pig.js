@@ -1006,24 +1006,6 @@ $(document).ready(function(){
 		$divs.eq($index-1).removeClass("div_hidden");
 	})
 	
-	$status = 0 ;
-	$("#allSelect").click(function(){
-		var $input = $(this).parent().parent().parent().prev().find("table input");
-		if ($status == 0){
-			for (var i = 0;i<$input.length;i++){
-				$input.eq(i).prop("checked", "checked");
-			}
-			$status = 1;
-		}else if ($status == 1){
-			for (var i = 0;i<$input.length;i++){
-				$input.eq(i).removeAttr("checked");
-			}
-			$status = 0;
-		}
-//		alert($status)
-//		console.log($(this).parent().parent().parent().prev().find("table input"))
-	})
-	
 	
 	var vm = new Vue({
 		el:'#DDGL',
@@ -1129,3 +1111,22 @@ $(function(){
 	
 })
 	
+
+$(function(){
+	$status = 0 ;
+	
+	$(".allSelect").click(function(){
+		var $input = $(this).parent().parent().parent().prev().find("table input");
+		if ($status == 0){
+			for (var i = 0;i<$input.length;i++){
+				$input.eq(i).prop("checked", "checked");
+			}
+			$status = 1;
+		}else if ($status == 1){
+			for (var i = 0;i<$input.length;i++){
+				$input.eq(i).removeAttr("checked");
+			}
+			$status = 0;
+		}
+	})
+})
