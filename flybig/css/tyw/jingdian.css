@@ -10,10 +10,13 @@ body{
 	width: 700px;
 	/*height: 400px;*/
 	background: white;
-    top: 170px;
-    left: 377px;
+    top: 169px;
+    left: 461px;
     padding: 20px 20px;
     z-index: 1;
+}
+.list li {
+	cursor: pointer;
 }
 .list-con1{
 	width: 300px;
@@ -172,6 +175,10 @@ body{
 	float: left;
 	margin-right: 12px;
 }
+.listStyle li {
+	cursor: pointer;
+}
+
 .hezuo-con ul li{
 	float: left;
 	border-right:1px solid lightgray ;
