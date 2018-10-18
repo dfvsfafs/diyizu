@@ -260,3 +260,8 @@
 .kkk{
 	margin-left: 20px;
 }
+
+
+.modalStyle>div{
+	padding-bottom: 30px !important;
+}

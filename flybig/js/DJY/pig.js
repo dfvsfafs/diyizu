@@ -1050,7 +1050,10 @@ $(document).ready(function(){
                _tasks.splice(index, 1);
              }
            })
-         }
+        },
+        add(){
+				this.DD.push({id:this.id,name:this.name});
+			}
 
 		}
 	})
