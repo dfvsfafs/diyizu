@@ -367,14 +367,15 @@ function kui_click_(obj,now_date,kui_y,kui_m,kui_d){
 		jqObj[0].val(kui_y +'-'+ now_month +'-'+ kui_d);
 		$('#kui_d_pane').hide();
 		$(".fancen").css({"color":"#6c6c6c"});
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(1).removeClass("centent_frist_l_b_tabxuan_checkb");
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(1).addClass("centent_frist_l_b_tabxuan_checka");
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(0).removeClass("centent_frist_l_b_tabxuan_checka");
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(0).addClass("centent_frist_l_b_tabxuan_checkb");
-		
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(3).removeClass("centent_frist_l_b_tabxuan_checkb");
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(3).addClass("centent_frist_l_b_tabxuan_checka");
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(2).removeClass("centent_frist_l_b_tabxuan_checka");
-		$(".centent_frist_l_b_tabxuan_aaa").children().eq(2).addClass("centent_frist_l_b_tabxuan_checkb");
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(1).removeClass("centent_frist_l_b_tabxuan_checkb");
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(1).addClass("centent_frist_l_b_tabxuan_checka");
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(0).removeClass("centent_frist_l_b_tabxuan_checka");
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(0).addClass("centent_frist_l_b_tabxuan_checkb");
+//		
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(3).removeClass("centent_frist_l_b_tabxuan_checkb");
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(3).addClass("centent_frist_l_b_tabxuan_checka");
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(2).removeClass("centent_frist_l_b_tabxuan_checka");
+//		$(".centent_frist_l_b_tabxuan_aaa").children().eq(2).addClass("centent_frist_l_b_tabxuan_checkb");
 	}
 }
+

@@ -104,8 +104,10 @@ $(document).ready(function(){
 			$(this).parent().next().show();
 			$(this).parent().next().next().hide();
 		}if ($a==2) {
+			$("#text1").val("");
 			$(this).parent().next().hide();
 			$(this).parent().next().next().show();
+			
 		}
 	})
 	
@@ -678,6 +680,7 @@ $(document).ready(function(){
 		$(this).css("background-color","#ffc900").siblings().css("background-color","");
 		$(this).parent().slideUp();
 	})
+	//1111
 	$(".tow_hd_tab ul li").click(function(){
 		$(this).css("color","#3d3d3d").siblings().css("color","#666");
 		var $a = $(this).index();
@@ -701,7 +704,8 @@ $(document).ready(function(){
 		}
 	})
 
-
+	
+	//0000000
 	$(".tow_bd_b span").click(function(){
 		$(this).addClass("tow_bd_b_hot").siblings().removeClass("tow_bd_b_hot");
 		var $a = $(this).index();
@@ -773,6 +777,186 @@ $(document).ready(function(){
 			$(this).parent().parent().next().next().show();
 		}
 	})
+
+//8888888888888888888888888888888888888888888
+	$(".ba_l_prev").click(function(){
+		var $a = parseInt($('.ba_l_lun ul').css("marginLeft"));
+		//alert($a);
+		//$(".ba_l_lun ul").animate({marginLeft:""},1000);
+		if ($a == -1302) {
+			$(".ba_l_lun ul").animate({marginLeft:"-651px"},2000);
+		} else if ($a == -651) {
+			$(".ba_l_lun ul").animate({marginLeft:"0px"},2000);
+		}
+	})
+	$(".ba_l_next").click(function(){
+		var $a = parseInt($('.ba_l_lun ul').css("marginLeft"));
+		//alert($a);
+		if ($a == 0) {
+			$(".ba_l_lun ul").animate({marginLeft:"-651px"},2000);
+		} else if ($a == -651) {
+			$(".ba_l_lun ul").animate({marginLeft:"-1302px"},2000);
+		}
+	})
+	
+	$(".ba_hd_tab ul li").click(function(){
+		$(this).css("color","#3d3d3d").siblings().css("color","#666");
+		var $a = $(this).index();
+		$(this).parent().parent().parent().next().children().eq($a).show().siblings().hide();
+		if ($a == 0) {
+//			$(this).parent().children("div").removeClass("tab_indicator_a");
+//			$(this).parent().children("div").removeClass("tab_indicator_b");
+			$(this).parent().children("div").animate({left:"0px",width:"68px"},100);
+		} else if ($a == 1) {
+//			$(this).parent().children("div").removeClass("tab_indicator_b");
+//			$(this).parent().children("div").addClass("tab_indicator_a");
+			$(this).parent().children("div").animate({left:"82px",width:"113px"},100);
+		}
+	})
+
+
+	//车票选择出发地
+	$(".ba_dow_jq1 li").click(function(){
+		var $e = $(this).text();
+		$(".ba_carpiao_city").children("font").text($e);
+	})
+
+	$(".ba_dow_jq li").click(function(){
+		var $a = $(this).index();
+		var $b = $(this).parent().parent().prev().children().eq(0).children("span").text();
+		if ($a==0) {
+			var $c = $(".ba_carpiao_city").children().eq(0).text();
+				if ($c == $b) {
+					
+				}else{
+					var $c = $(".ba_carpiao_city").children().eq(0).text();
+					var $d = $(".ba_carpiao_city").children().eq(2).text();
+					$(".ba_carpiao_city").children("font").text($d);
+					$(".ba_carpiao_city").children("span:last-child").text($c);
+				}
+			$(".ba_dow_jq1 li").unbind();
+			$(".ba_dow_jq1 li").click(function(){
+				var $ee = $(this).text();
+				$(".ba_carpiao_city").children("font").text($ee);
+				var $aaa = $(this).text();
+				$(this).parent().prev().children().eq(0).html($aaa);
+				$(this).css("background-color","#ffc900").siblings().css("background-color","");
+				$(this).parent().slideUp();
+			})
+			
+		} else{
+			var $c = $(".ba_carpiao_city").children().eq(0).text();
+			var $d = $(".ba_carpiao_city").children().eq(2).text();
+			$(".ba_carpiao_city").children("font").text($d);
+			$(".ba_carpiao_city").children("span:last-child").text($c);
+			$(".ba_dow_jq1 li").unbind();
+			$(".ba_dow_jq1 li").click(function(){
+				var $e = $(this).text();
+				$(".ba_carpiao_city").children("span:last-child").text($e);
+				var $aa = $(this).text();
+				$(this).parent().prev().children().eq(0).html($aa);
+				$(this).css("background-color","#ffc900").siblings().css("background-color","");
+				$(this).parent().slideUp();
+			})
+		}
+	})
+	
+	
+	//0000000000000000000
+	//车票选择出发地
+	$(".ba_dow_jq3 li").click(function(){
+		var $e = $(this).text();
+		$(".ba_carpiao_city1").children("font").text($e);
+	})
+
+	$(".ba_dow_jq2 li").click(function(){
+		var $a = $(this).index();
+		var $b = $(this).parent().parent().prev().children().eq(0).children("span").text();
+		if ($a==0) {
+			var $c = $(".ba_carpiao_city1").children().eq(0).text();
+				if ($c == $b) {
+					
+				}else{
+					var $c = $(".ba_carpiao_city1").children().eq(0).text();
+					var $d = $(".ba_carpiao_city1").children().eq(2).text();
+					$(".ba_carpiao_city1").children("font").text($d);
+					$(".ba_carpiao_city1").children("span:last-child").text($c);
+				}
+			$(".ba_dow_jq3 li").unbind();
+			$(".ba_dow_jq3 li").click(function(){
+				var $ee = $(this).text();
+				$(".ba_carpiao_city1").children("font").text($ee);
+				var $aaa = $(this).text();
+				$(this).parent().prev().children().eq(0).html($aaa);
+				$(this).css("background-color","#ffc900").siblings().css("background-color","");
+				$(this).parent().slideUp();
+			})
+			
+		} else{
+			var $c = $(".ba_carpiao_city1").children().eq(0).text();
+			var $d = $(".ba_carpiao_city1").children().eq(2).text();
+			$(".ba_carpiao_city1").children("font").text($d);
+			$(".ba_carpiao_city1").children("span:last-child").text($c);
+			$(".ba_dow_jq3 li").unbind();
+			$(".ba_dow_jq3 li").click(function(){
+				var $e = $(this).text();
+				$(".ba_carpiao_city1").children("span:last-child").text($e);
+				var $aa = $(this).text();
+				$(this).parent().prev().children().eq(0).html($aa);
+				$(this).css("background-color","#ffc900").siblings().css("background-color","");
+				$(this).parent().slideUp();
+			})
+		}
+	})
+
+
+
+
+	//底部广告弹出
+	$(".ad_pig").click(function(){
+		$(this).prev().show();
+		$(this).stop().animate({left:"-100%"},500).prev().animate({left:"0"},500);
+	})
+	$(".ad_cen_c6").click(function(){
+		$(this).parent().parent().parent().stop().animate({left:"-100%"},500);
+		$(".ad_pig").animate({left:"0"},700);
+//		$(this).parent().parent().parent().hide(500);
+		$(this).parent().parent().parent()
+	})
+
+//	window.onload = confirmExit();
+//	
+//	function confirmExit() {
+//	   $(".ad_pig").prev().show();
+//		$(".ad_pig").stop().animate({left:"-100%"},500).prev().animate({left:"0"},500);
+//	}
+
+
+
+
+//0000000000000000000
+$(document).click(function(){ 
+	var $a = $("#text").val();
+	if ($a !== "") {
+		$(".centent_frist_l_b_tabxuan_aaa").children().eq(1).removeClass("centent_frist_l_b_tabxuan_checkb");
+		$(".centent_frist_l_b_tabxuan_aaa").children().eq(1).addClass("centent_frist_l_b_tabxuan_checka");
+		$(".centent_frist_l_b_tabxuan_aaa").children().eq(0).removeClass("centent_frist_l_b_tabxuan_checka");
+		$(".centent_frist_l_b_tabxuan_aaa").children().eq(0).addClass("centent_frist_l_b_tabxuan_checkb");
+	} 
+	
+	var $a = $("#text1").val();
+	if ($a !== "") {
+		$(".dan2").children().eq(1).removeClass("centent_frist_l_b_tabxuan_checkb");
+		$(".dan2").children().eq(1).addClass("centent_frist_l_b_tabxuan_checka");
+		$(".dan2").children().eq(0).removeClass("centent_frist_l_b_tabxuan_checka");
+		$(".dan2").children().eq(0).addClass("centent_frist_l_b_tabxuan_checkb");
+	} 
+    }) 
+
+
+
+
+
 
 })
 

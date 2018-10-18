@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/fzm/tyle.css"/>
 		<link rel="stylesheet" type="text/css" href="css/fzm/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/fzm/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jie/sidebar.css"/>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
@@ -15,11 +16,12 @@
 		<script src="js/fzm/cityTemplate.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/fzm/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/fzm/doubleDate2.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jie/sidebar.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--顶部导航条-->
 		<div class="top_nava">
-			<div class="clearfix top_nav">
+			<div class="clearfix top_nav" style="min-width: 1200px;">
 				<!--左边导航-->
 				<div class="pull-left top_nav_left">
 					<ul class="clearfix">
@@ -33,8 +35,8 @@
 						<li class="pull-left logrist">
 							<div>
 								<span>Hi，最近想去哪里玩？</span>
-								<a href="#">请登录</a>
-								<a href="#">免费注册</a>
+								<a href="login.html">请登录</a>
+								<a href="reg.html">免费注册</a>
 							</div>
 						</li>
 					</ul>
@@ -266,7 +268,7 @@
 		<!--一条超级华丽的分界线-->
 		<!--顶部搜索部分-->
 		<div class="header_cen">
-			<div class="header_centent">
+			<div class="header_centent" style="min-width: 1200px;">
 				<div class="row" style="margin: 0px;">
 					<!--logo图片-->
 					<div class="header_logo col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -350,14 +352,14 @@
 		<!--一条超级华丽的分界线-->
 		<!--头部导航条部分-->
 		<div class="header_nav">
-			<div class="header_nava">
+			<div class="header_nava" style="min-width: 1200px;">
 				<ul class="nav nav-pills">
-					<li><a href="#">首页</a></li>
-					<li><a href="#">酒店</a></li>
-					<li><a href="#">客栈公寓</a></li>
-					<li><a href="#">港澳台/国际机票</a></li>
-					<li><a href="#">旅游度假</a></li>
-					<li><a href="#">飞猪国际</a></li>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="Nationalticket.html">港澳台/国际机票</a></li>
+					<li><a href="Trainticket.html">火车票</a></li>
+					<li><a href="travel.html">旅游度假</a></li>
+					<li><a href="jingdian.html">景点门票</a></li>
+					<li><a href="User.html">我的旅行</a></li>
 				</ul>
 			</div>
 		</div>
@@ -367,12 +369,12 @@
 		<!--一条超级华丽的分界线-->
 		<!--中间部分-->
 		<div class="centent">
-			<div class="centent_cen">
+			<div class="centent_cen" style="min-width: 1200px; overflow: hidden;">
 				<!--中间第一部分-->
 				<div class="row centent_cen_frist">
 					<!--左边-->
 					<!--城市选择器-->
-					<div id="in_city" style="display: none"></div>
+					<div id="in_city" style="display: none;"></div>
 					<!--城市选择器-->
 					<div class="centent_cen_frist_l col-lg-7 col-md-7 col-sm-7 col-xs-7 clearfix">
 						<!--垂直选项卡-->
@@ -6721,7 +6723,7 @@
 												<dd>日本环球影城</dd>
 												<p>¥455</p>
 											</div>
-											<div class="liu_top">TOP1</div>
+											<div class="liu_top text_hover">TOP1</div>
 										</a>
 									</li>
 									<li class="clearfix">
@@ -6731,7 +6733,7 @@
 												<dd>日本环球影城</dd>
 												<p>¥455</p>
 											</div>
-											<div class="liu_top">TOP2</div>
+											<div class="liu_top text_hover">TOP2</div>
 										</a>
 									</li>
 									<li class="clearfix">
@@ -6741,7 +6743,7 @@
 												<dd>日本环球影城</dd>
 												<p>¥455</p>
 											</div>
-											<div class="liu_top">TOP3</div>
+											<div class="liu_top text_hover">TOP3</div>
 										</a>
 									</li>
 									<li class="clearfix">
@@ -7614,7 +7616,7 @@
 						<div class="tow_hd_a">
 							<span class="ba_icon">机票</span>
 						</div>
-						<div class="tow_hd_tab">
+						<div class="ba_hd_tab">
 							<ul>
 								<li style="color: #3d3d3d;">国内机票</li>
 								<li>国际·港澳台机票</li>
@@ -7634,7 +7636,7 @@
 								<div class="tow_bd_a clearfix">
 									<div class="ba_bd_a_dow pull-left">
 						                <div class="a_dow b_dow"><span>北京</span></div>
-						                <ul class="dowcity_range dowcity_rangejq4">
+						                <ul class="dowcity_range dowcity_rangejq4 ba_dow_jq1">
 						                    <li style="background-color: #ffc900;">北京</li>
 						                    <li>上海</li>
 						                    <li>广州</li>
@@ -7648,7 +7650,7 @@
 						            </div>
 						            <div class="ba_bd_a_dow pull-left" style="margin-left: 12px;">
 						                <div class="a_dow b_dow"><span>出发</span></div>
-						                <ul class="dowcity_range dowcity_rangejq4">
+						                <ul class="dowcity_range dowcity_rangejq4 ba_dow_jq">
 						                    <li style="background-color: #ffc900;">出发</li>
 						                    <li>到达</li>
 						                </ul>
@@ -7663,6 +7665,9 @@
 						                    <li>45天内特价</li>
 						                </ul>
 						            </div>
+						            <div class="tow_hd_more1">
+										<a href="#" title="更多国内城市特价" class="pull-right" style="font-size: 12px;">更多国内城市特价</a>
+									</div>
 								</div>
 							</div>
 							<!--图片ul-->
@@ -7671,7 +7676,7 @@
 									<ul class="clearfix">
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7686,7 +7691,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7701,7 +7706,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7716,7 +7721,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7731,7 +7736,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7746,7 +7751,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7761,7 +7766,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7776,7 +7781,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7791,7 +7796,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7806,7 +7811,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7821,7 +7826,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7836,7 +7841,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7851,7 +7856,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7866,7 +7871,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7881,7 +7886,7 @@
 										</li>
 										<li>
 											<a href="#">
-												<div class="tow_carpiao_city text_hover">
+												<div class="ba_carpiao_city text_hover">
 													<font>北京</font>
 													<span class="tow_car_oneway"></span>
 													<span>烟台</span>
@@ -7902,14 +7907,796 @@
 						<!--第一个-->
 						<!--第二个-->
 						<div class="tow_tab_cen">
-							2
-							
+							<div class="centent_cen_tow_bd clearfix">
+								<div class="tow_bd_a clearfix">
+									<div class="ba_bd_a_dow pull-left">
+						                <div class="a_dow b_dow"><span>香港</span></div>
+						                <ul class="dowcity_range dowcity_rangejq4 ba_dow_jq3">
+						                    <li style="background-color: #ffc900;">香港</li>
+						                    <li>澳门</li>
+						                    <li>台北</li>
+						                    <li>曼谷</li>
+						                    <li>新加坡</li>
+						                    <li>东京</li>
+						                    <li>大阪</li>
+						                    <li>纽约</li>
+						                    <li>旧金山</li>
+						                    <li>伦敦</li>
+						                    <li>巴黎</li>
+						                </ul>
+						            </div>
+						            <div class="ba_bd_a_dow pull-left" style="margin-left: 12px;">
+						                <div class="a_dow b_dow"><span>出发</span></div>
+						                <ul class="dowcity_range dowcity_rangejq4 ba_dow_jq2">
+						                    <li style="background-color: #ffc900;">出发</li>
+						                    <li>到达</li>
+						                </ul>
+						            </div>
+						            <div class="ba_bd_a_dow pull-left" style="margin-left: 12px;">
+						                <div class="a_dow b_dow"><span>7天内特价</span></div>
+						                <ul class="dowcity_range dowcity_rangejq4">
+						                    <li>3天内特价</li>
+						                    <li style="background-color: #ffc900;">7天内特价</li>
+						                    <li>14天内特价</li>
+						                    <li>30天内特价</li>
+						                    <li>45天内特价</li>
+						                </ul>
+						            </div>
+						            <div class="tow_hd_more1">
+										<a href="#" title="更多国际城市/港澳台特价" class="pull-right" style="font-size: 12px;">更多国际城市/港澳台特价</a>
+									</div>
+								</div>
+							</div>
+							<!--图片ul-->
+							<div class="clearfix">
+								<div class="tow_carpiao">
+									<ul class="clearfix">
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div class="ba_carpiao_city1 text_hover">
+													<font>香港</font>
+													<span class="tow_car_oneway"></span>
+													<span>烟台</span>
+												</div>
+												<div class="clearfix text_hover">
+													<div class="tow_pi_price text_hover">
+														<em>¥</em>999<span class="qi">起</span>
+													</div>
+													<div class="tow_item_sales text_hover">2018-11-07</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--图片ul-->
 						</div>
 						<!--第二个-->
 					</div>
 					<!--table选项-->
+					<div class="centent_cen_tow_tab clearfix" style="margin-top: 6px;">
+						<div class="ba_l clearfix">
+							<a class="ba_l_prev" href="javascript:void(0);" title="上翻">
+								<span class="ba_l_icon_prev"></span>
+							</a>
+							<a class="ba_l_next" href="javascript:void(0);" title="下翻">
+								<span class="ba_l_icon_next"></span>
+							</a>
+							<div class="ba_l_lun">
+								<ul class="clearfix">
+									<li><a href="#"><img src="img/DJY/pai1.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai2.png"></a></li>
+									<li><a href="#"><img src="img/DJY/pai3.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai4.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai5.png"></a></li>
+									<li><a href="#"><img src="img/DJY/pai6.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai7.png"></a></li>
+									<!--11111-->
+									<li><a href="#"><img src="img/DJY/pai8.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai9.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai10.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai11.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai12.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai13.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai14.jpg"></a></li>
+									<!--222-->
+									<li><a href="#"><img src="img/DJY/pai15.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai16.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai17.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai18.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai19.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai20.jpg"></a></li>
+									<li><a href="#"><img src="img/DJY/pai21.jpg"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="ba_img1">
+							<img src="img/fzm/ba_1.jpg"/>
+						</div>
+						<div class="ba_img1">
+							<img src="img/fzm/ba_2.jpg"/>
+						</div>
+					</div>
 				</div>
 				<!--中间第八部分-->
+				<!--中间第九部分-->
+				<div class="centent_cen_tow">
+					<div class="centent_cen_tow_hd" style="margin-bottom: 12px;">
+						<div class="jiu_hd_a">
+							<span class="jiu_icon">猜你喜欢</span>
+						</div>
+					</div>
+					<!--222222-->
+					<!--table选项-->
+					<div class="centent_cen_tow_tab">
+						<div class="tow_tab_cen_l" style="display: block; width: 1164px;">
+							<ul class="clearfix" style="width: 1170px;">
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="马尔代夫-超六星级尼亚玛岛自由行全国出发">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a3.jpg" title="马尔代夫-超六星级尼亚玛岛自由行全国出发"/>
+											<div class="tow_extra_info"><span class="destination">尼亚玛岛</span><span>跟团游</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">马尔代夫-超六星级尼亚玛岛自由行全国出发</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>1499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出211件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a4.jpg" title="飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星"/>
+											<div class="tow_extra_info"><span class="destination">曼谷</span><span>当地玩乐</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>3499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出218件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a5.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a6.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span></span><span>当地玩乐</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>跟团游</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a8.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a9.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span></span><span>当地玩乐</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>跟团游</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="马尔代夫-超六星级尼亚玛岛自由行全国出发">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a3.jpg" title="马尔代夫-超六星级尼亚玛岛自由行全国出发"/>
+											<div class="tow_extra_info"><span class="destination">尼亚玛岛</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">马尔代夫-超六星级尼亚玛岛自由行全国出发</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>1499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出211件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="马尔代夫-超六星级尼亚玛岛自由行全国出发">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a3.jpg" title="马尔代夫-超六星级尼亚玛岛自由行全国出发"/>
+											<div class="tow_extra_info"><span class="destination">尼亚玛岛</span><span>跟团游</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">马尔代夫-超六星级尼亚玛岛自由行全国出发</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>1499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出211件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a4.jpg" title="飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星"/>
+											<div class="tow_extra_info"><span class="destination">曼谷</span><span>当地玩乐</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>3499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出218件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a5.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a6.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span></span><span>当地玩乐</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>跟团游</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a8.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a9.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span></span><span>当地玩乐</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>跟团游</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="马尔代夫-超六星级尼亚玛岛自由行全国出发">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a3.jpg" title="马尔代夫-超六星级尼亚玛岛自由行全国出发"/>
+											<div class="tow_extra_info"><span class="destination">尼亚玛岛</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">马尔代夫-超六星级尼亚玛岛自由行全国出发</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>1499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出211件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a7.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>跟团游</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="马尔代夫-超六星级尼亚玛岛自由行全国出发">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a3.jpg" title="马尔代夫-超六星级尼亚玛岛自由行全国出发"/>
+											<div class="tow_extra_info"><span class="destination">尼亚玛岛</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">马尔代夫-超六星级尼亚玛岛自由行全国出发</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>1499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出211件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a4.jpg" title="飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星"/>
+											<div class="tow_extra_info"><span class="destination">曼谷</span><span>当地玩乐</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>3499<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出218件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店">
+										<div class="tow_item_img">
+											<img src="img/fzm/tow_a5.jpg" title="春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店"/>
+											<div class="tow_extra_info"><span class="destination">东京</span><span>自由行</span></div>
+										</div>
+										<div class="tow_item_info">
+											<div class="tow_item_title">春秋旅游上海-日本5-7日自由行大阪名古屋香川北海道九州机票酒店</div>
+											<div class="tow_item_container"></div>
+											<div class="tow_item_price">
+												<div class="tow_pi_price">
+													<em>¥</em>999<span class="qi">起</span>
+												</div>
+												<div class="tow_item_sales">30天售出759件</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--table选项-->
+				</div>
+				<!--中间第九部分-->
 			</div>
 		</div>
 		<!--中间部分-->
@@ -7920,13 +8707,218 @@
 		<!--一条超级华丽的分界线-->
 		<!--一条超级华丽的分界线-->
 		<!--底部部分-->
-		
-		
-		
-		
+		<div class="footer" style="background: #f2f3f4 ;">
+      		<!--底部内容开始-->      		
+      		<div class="footer_con"style="background: #f2f3f4 ; min-width: 1200px;">
+      			<!--上部分开始-->
+      			    <div class="footer-item clearfix">
+	      				<div class=" pull-left footer-item1 clearfix">
+	      					<h4>旅行产品</h4>
+			      			<ul class="list-unstyled">
+			      				<li><a href="">国内机票</a></li>
+			      				<li><a href="">国际机票</a></li>
+			      				<li><a href="">酒店预订</a></li>
+			      				<li><a href="">客栈公寓</a></li>
+			      				<li><a href="">旅游度假</a></li>
+			      			</ul>
+	      				</div>	
+	      				
+	      				<div class=" pull-left footer-item1 clearfix">
+	      					<h4>旅行产品</h4>
+			      			<ul class="list-unstyled">
+			      				<li><a href="">开通支付宝</a></li>
+			      				<li><a href="">免费注册</a></li>
+			      				<li><a href="">退票改签</a></li>
+			      				<li><a href="">7*24小时在线帮助</a></li>
+			      			</ul>
+	      				</div>
+	      				
+	      				
+	      				<div class=" pull-left footer-item1 clearfix">
+	      					<h4>旅行产品</h4>
+			      			<ul class="list-unstyled">
+			      				<li><a href="">商家入驻</a></li>
+			      				<li><a href="">商家培训</a></li>
+			      				<li><a href="">帮派互动</a></li>
+			      				<li><a href="">规则中心</a></li> 
+			      				<li><a href="">规则意见征集</a></li>
+			      				<li><a href="">商家在线客服</a></li>
+			      				<li><a href="">第三方合作</a></li>
+			      			      
+			      			</ul>
+	      				</div>
+	      				
+	      				<div class="pull-left footer-item1 clearfix">
+	      					<img src="img/tyw/detl8.png"/>
+	      				</div>
+	      			
+      			    </div>	 
+      			    <!--上部分结束-->
+      			    
+      			   <!--下部分开始--> 
+      			   <div class="footer-ail">
+      			   		<ul class="list-unstyled">
+      			   			<li><a href="">阿里巴巴集团</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">廉政举报</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">淘宝网</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">天猫</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">聚划算</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">全球速卖通</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">阿里巴巴国际交易市场</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">1688</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">阿里妈妈</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">飞猪</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">阿里云计算</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">AliOS</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">万网</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">高德</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">UC</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">友盟</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">虾米</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">阿里星球</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">UC头条</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">钉钉</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">飞猪旅行</a></li>
+      			   			<li>|</li>
+      			   			<li><a href="">阿里游戏</a></li>
+      			   		</ul>
+      			   	 	     
+      			   </div>
+      			   
+      			   
+      			   <div class="footer-nav">
+      			   	   <ul class="list-unstyled">
+      			   	   	<li><a href="">关于淘宝</a></li>
+      			   	   	<li><a href="">合作伙伴</a></li>
+      			   	   	<li><a href="">营销中心</a></li>
+      			   	   	<li><a href="">联系客服</a></li>
+      			   	   	<li><a href="">开放平台</a></li>
+      			   	   	<li><a href="">诚征英才</a></li>
+      			   	   	<li><a href="">联系我们</a></li>
+      			   	   	<li><a href="">网站地图</a></li>
+      			   	   	<li><a href=""> 隐私政策 © Fliggy.com版权所有</a></li>
+      			   	   </ul>
+      			   </div>
+      			   
+      			   <div class="" style="clear: both;"></div>
+      			   <div class="footer-copyright">
+      			   		<span>增值电信业务经营许可证：浙B2-20160773</span>
+      			   </div>
+      			   
+      			   <div class="">
+      			   	 <img src="img/tyw/detl9.gif"/>
+      			   </div>
+      			   <!--下部分结束-->
+      			    
+      			    
+	      	</div>	
+	      	<!--底部结束-->	
+      	</div>
 		<!--底部部分-->
 		<!--一条超级华丽的分界线-->
 		<!--一条超级华丽的分界线-->
 		<!--一条超级华丽的分界线-->
+		<!--侧边栏-->
+		<div class="sidebar">
+			<!--优惠券-->
+			<div class="YHQ">
+				<img src="img/jie/YHQ.png" alt="优惠券"/>
+			</div>
+			<!--购物车-->
+			<div class="GWC">
+				<img src="img/jie/GWC.png" />
+				<span>
+					购物车
+				</span>
+			</div>
+			<!--个人-->
+			<div class="GR">
+				<img src="img/jie/GR.png" />
+			</div>
+			<!--底部侧边栏-->
+			<div class="fo_silderbar">
+				<!--意见反馈-->
+				<div class="YJFK">
+					<img src="img/jie/YJFK.png" />
+					<div class="TCK">
+						意见反馈
+					</div>
+				</div>
+				<!--二维码-->
+				<div class="EWM">
+					<img src="img/jie/EWM.png" />
+					<div class="TCK_ewm">
+						<img src="img/jie/TB1b_HdGVXXXXb6XVXXTyVt9VXX-128-128.png" />
+					</div>
+				</div>
+				<!--回到顶部-->
+				<div class="HDDB">
+					<img src="img/jie/HDDB.png" />
+					<div class="TCK">
+						回到顶部
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--侧边栏-->
+		<!--一条超级华丽的分界线-->
+		<!--一条超级华丽的分界线-->
+		<!--广告弹出-->
+		<div class="ad">
+			<div class="ad_a">
+				<div class="ad_b"></div>
+				<div class="ad_cen">
+					<div class="ad_cen_a">
+						<img src="img/fzm/ad_3.png"/>
+					</div>
+					<div class="ad_cen_b">
+						<p>新用户500M流量密令：飞猪</p>
+						<p>去飞猪APP-我的-口令兑换</p>
+					</div>
+					<div class="ad_cen_c">
+						<div class="ad_cen_c1"></div>
+						<div class="ad_cen_c2">手机扫描二维码</div>
+						<div class="ad_cen_c3">下载客户端</div>
+						<div class="ad_cen_c4">
+							<img src="img/fzm/ad_2.png"/>
+						</div>
+						<div class="ad_cen_c5">
+							<a href="#">iphone下载</a>
+							<a href="#">Android下载</a>
+						</div>
+						<div class="ad_cen_c6">
+							<img src="img/fzm/ad_4.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ad_pig">
+				<img src="img/fzm/ad_1.png"/>
+			</div>
+		</div>
+		
+		
+		
+		<!--广告弹出-->
 	</body>
 </html>
