@@ -996,6 +996,14 @@ $(document).ready(function(){
 		$(".oo").css({"background":"rgb(229,213,63)","color":"white","border":"none"});
 	})
 	
-	
+	$(".admincontentleft li").click(function(){
+		var $divs = $(".adimincontentright>div");
+		var $index = $(this).index();
+//		alert($index)
+		for (var i = 0; i < $divs.length; i++){
+			$divs.eq(i).addClass("div_hidden");
+		}
+		$divs.eq($index-1).removeClass("div_hidden");
+	})
 	
 })
