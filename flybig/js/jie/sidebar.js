@@ -6,12 +6,12 @@ $(document).ready(function(){
 	
 //	意见反馈
 	$(".YJFK").hover(function(){
-		$(this).find(".TCK").show();
-		$(this).find(".TCK").animate({left:"-80px"})
+//		$(this).find(".TCK").show();
+		$(this).find(".TCK").stop().animate({left:"-80px"});
 		
 	},function(){
-		$(this).find(".TCK").animate({left:"20px"})
-		$(this).find(".TCK").hide(500);
+		$(this).find(".TCK").stop().animate({left:"20px"})
+//		$(this).find(".TCK").hide(500);
 	})
 	
 //	返回顶部
