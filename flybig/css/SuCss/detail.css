@@ -616,6 +616,9 @@
 	height: 35px !important;
 	padding: 0;
 }
+.detail_nav>ul{
+	width:790px;
+}
 .detail_nav li{	border-right: 1px solid #d2d7de;}
 .detail_nav li>a{
 	height: 35px !important;
@@ -627,7 +630,7 @@
 	background-color: white !important;
 }
 .detail_nav font,.nav_hide_common font{color: #e90;}
-.nav_eception{margin-left: 253px;position: relative;}
+.nav_eception{position: relative;}
 .qr_scan{
 	position: fixed;
 	top: 32px;
