@@ -111,12 +111,14 @@
 }
 .op1 span{
 	float: left;
+	cursor: pointer;
 }
 .op2{
 	padding-left: 20px;
 }
 .op2 span{
 	float: left;
+	cursor: pointer;
 }
 .ppage1table{
 	margin-top: 15px;
