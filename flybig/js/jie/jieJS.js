@@ -55,6 +55,7 @@ $(document).ready(function(){
 	$(".area_list li").click(function(){
 		var $temp = $(this).text();
 		$("#choose_area input").val($temp);
+		$(".area").hide(); 
 	})
 	
 	$("#choose_area input").focus(function(){
