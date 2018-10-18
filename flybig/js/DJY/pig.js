@@ -1006,13 +1006,51 @@ $(document).ready(function(){
 		$divs.eq($index-1).removeClass("div_hidden");
 	})
 	
+	$status = 0 ;
+	$("#allSelect").click(function(){
+		var $input = $(this).parent().parent().parent().prev().find("table input");
+		if ($status == 0){
+			for (var i = 0;i<$input.length;i++){
+				$input.eq(i).attr("checked", true);
+			}
+			$status = 1;
+		}else if ($status == 1){
+			for (var i = 0;i<$input.length;i++){
+				$input.eq(i).attr("checked", false);
+			}
+			$status = 0;
+		}
+//		alert($status)
+//		console.log($(this).parent().parent().parent().prev().find("table input"))
+	})
+	
 })
 
-var vm = new Vue({
-	el:"#DDGL",
-	data:{
-		DD:[
-		{id:1,XDTime:2018-10-17 12:00,num:3,statue:完成}
-		]
-	}
-})
+	var vm = new Vue({
+		el:'#DDGL',
+		data:{
+			id:'',
+			XDTime:'',
+			num:'',
+			statue:'',
+			DD:[
+			{id:1,XDTime:"2018-10-17 12:00",num:3,statue:"完成"},
+			{id:2,XDTime:"2018-10-17 12:00",num:3,statue:"完成"},
+			{id:3,XDTime:"2018-10-17 12:00",num:3,statue:"完成"},
+			{id:4,XDTime:"2018-10-17 12:00",num:3,statue:"完成"}
+			]
+		},
+		methods:{
+			removeTask: function(task){ //删除任务
+           //指向Vue实例中的tasks
+           _tasks = this.DD;
+           //remove
+           _tasks.forEach(function(item, index){
+             if(item.id == task.id){
+               _tasks.splice(index, 1);
+             }
+           })
+         }
+
+		}
+	})
