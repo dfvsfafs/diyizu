@@ -1007,3 +1007,12 @@ $(document).ready(function(){
 	})
 	
 })
+
+var vm = new Vue({
+	el:"#DDGL",
+	data:{
+		DD:[
+		{id:1,XDTime:2018-10-17 12:00,num:3,statue:完成}
+		]
+	}
+})
