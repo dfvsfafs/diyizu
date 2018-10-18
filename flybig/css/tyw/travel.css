@@ -237,10 +237,10 @@ dd ul li a{
 	display: block;
 }
 .pop-list{
-	border-top: 5px cadetblue solid;
+	/*border-top: 5px cadetblue solid;*/
 }
 .arrow2{
-	border-bottom-color: cadetblue !important;
+	/*border-bottom-color: cadetblue !important;*/
 }
 
 /*右边内容的块二开始*/
@@ -257,12 +257,15 @@ dd ul li a{
 	
 }
 .main-topr22 .l-img:hover{
-	border-color: gray;
-	/*box-shadow: lightgray 0px 0px 1px 2px;*/
+	/*border-color: gray;*/
+	box-shadow: lightgray 0px 0px 1px 2px;
+	transition: box-shadow .2s ease-in;
+	
 }
 .main-topr22 .l-img{
 	border: 1px solid white;
 	border-top: 2px orangered solid;
+	transition: box-shadow .2s ease-in;
 }
 .money{
 	padding: 6px 8px;
@@ -355,7 +358,7 @@ dd ul li a{
 	color: white;
 }
 .jingnei dd:hover{
-	background-color: #ffc900;
+	/*background-color: #ffc900;*/
 	text-decoration: none;
 }
 .jingnei dl a:nth-child(7){
@@ -375,6 +378,13 @@ dd ul li a{
 }
 .dem-con1 img{
 	height: 185px;
+	transition: box-shadow .2s ease-in;
+	
+	
+}
+.dem-con1 img:hover{
+	box-shadow: lightgray 0px 0px 1px 2px;
+	
 }
 .de-title{
 	background: url(../../img/tyw/black.png) no-repeat;
@@ -676,3 +686,12 @@ dd ul li a{
 	display: none;
 }
 /*旅游周边结束*/
+.det img{
+	cursor: pointer;
+}
+.youlun img{
+	cursor: pointer;
+}
+/*.arround img{
+	cursor: pointer;
+}*/

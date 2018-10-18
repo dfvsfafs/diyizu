@@ -59,12 +59,17 @@ $(document).ready(function(){
  	// 选项卡
 			$(".jingnei nav dl dd").click(function(){
 			var	a = $(this).index();
+			$(this).css("background-color","#ffc900").siblings().css("background-color","white");
+			
 //			alert(a)
 		   $(this).parent().parent().next().children().eq(a).show().siblings().hide();	
 		   
 			})
 	//选项卡结束
-	
+//		$(".jingnei nav dl dd").focus(function(){
+//			$("this").css("background-color","#FFFFCC");
+//		});
+//	
 	
 //周边游的阴影开始
 			$(".zhoubian-all1").hover(function(){

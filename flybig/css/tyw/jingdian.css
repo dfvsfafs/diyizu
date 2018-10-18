@@ -112,6 +112,9 @@ body{
 	display: block;
 	margin-bottom: 20px;
 }
+.guonei-conr img{
+	cursor: pointer;
+}
 .guonei-conr nav{
 	margin-bottom: 20px;
 }

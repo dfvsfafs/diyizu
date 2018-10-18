@@ -16,6 +16,7 @@ $(document).ready(function(){
 //	选项卡开始
 			$(".guonei-conr nav ul li").click(function(){
 			var	a = $(this).index();
+			$(this).css("background-color","#ffc900").siblings().css("background-color","white");
 			//alert(a)
 		    $(this).parent().parent().next().children().eq(a).show().siblings().hide();	
 		   
