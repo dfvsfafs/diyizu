@@ -1,3 +1,8 @@
+/*通用样式*/
+.div_hidden {
+	display: none;
+}
+
 .bluetop{
 	width: 100%;
 	/*background: rgb(91,205,195);*/
@@ -49,6 +54,10 @@
 	width: 200px;
 	height: 500px;
 }
+.adimincontentright {
+	float: left;
+	width: 1200px;
+}
 .admincontentleft ul{
 	padding-top: 70px;
 }
@@ -56,6 +65,7 @@
 	height: 40px;
 	padding-left: 20px;
 	padding-top: 10px;
+	cursor: pointer;
 }
 .admincontentleft ul li:hover{
 	background: gray;

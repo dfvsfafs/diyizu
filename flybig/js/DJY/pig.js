@@ -995,4 +995,7 @@ $(document).ready(function(){
 		$(this).css({"background":"goldenrod","color":"white","border":"none"});
 		$(".oo").css({"background":"rgb(229,213,63)","color":"white","border":"none"});
 	})
+	
+	
+	
 })
