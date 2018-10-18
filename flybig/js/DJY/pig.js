@@ -1011,12 +1011,12 @@ $(document).ready(function(){
 		var $input = $(this).parent().parent().parent().prev().find("table input");
 		if ($status == 0){
 			for (var i = 0;i<$input.length;i++){
-				$input.eq(i).attr("checked", true);
+				$input.eq(i).prop("checked", "checked");
 			}
 			$status = 1;
 		}else if ($status == 1){
 			for (var i = 0;i<$input.length;i++){
-				$input.eq(i).attr("checked", false);
+				$input.eq(i).removeAttr("checked");
 			}
 			$status = 0;
 		}
